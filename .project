@@ -52,6 +52,11 @@
 			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/libraries/EEPROM</locationURI>
 		</link>
 		<link>
+			<name>libraries/EMailSender</name>
+			<type>2</type>
+			<locationURI>ECLIPSE_HOME/arduinoPlugin/libraries/EMailSender/2.4.2</locationURI>
+		</link>
+		<link>
 			<name>libraries/ESP8266HTTPClient</name>
 			<type>2</type>
 			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266HTTPClient</locationURI>
