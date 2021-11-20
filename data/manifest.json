@@ -1,11 +1,11 @@
 {
-  "name": "MKSWIFIMischiantiInverter",
-  "short_name": "MKSWIFIMischiantiInv",
+  "name": "BeePrintMKSWIFIMischianti",
+  "short_name": "BeePrint",
   "start_url": "./",
   "display": "standalone",
   "theme_color": "#ffff00",
   "background_color": "#ffff00",
-  "description": "MKS WiFi Mischianti web app.",
+  "description": "BeePrint: Web interface for MKS WIFI (FlyingBear Ghost 5) 3D printer",
   "orientation": "portrait",
 
   "gcm_sender_id": "123456789",

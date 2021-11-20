@@ -27,7 +27,6 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ArduinoJson/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/WebSockets/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/Hash/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/EMailSender}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266WiFi/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.cpp.sketch.input.1951863783" name="Sorgente CPP" superClass="io.sloeber.compiler.cpp.sketch.input"/>
@@ -42,7 +41,6 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ArduinoJson/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/WebSockets/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/Hash/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/EMailSender}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266WiFi/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.c.sketch.input.49230274" name="Sorgente C" superClass="io.sloeber.compiler.c.sketch.input"/>
@@ -57,7 +55,6 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ArduinoJson/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/WebSockets/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/Hash/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/EMailSender}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266WiFi/src}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.S.sketch.input.1498411798" name="Sorgente Assembly" superClass="io.sloeber.compiler.S.sketch.input"/>

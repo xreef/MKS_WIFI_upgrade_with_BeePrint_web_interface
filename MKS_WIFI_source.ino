@@ -1,3 +1,19 @@
+/** \mainpage MKS WiFi Mischianti
+ * MKS WiFi Mischianti
+ *
+ * Renzo Mischianti <www.mischianti.org>
+ *
+ * https://www.mischianti.org/category/project/web-interface-beeprint-for-mks-wifi/
+ *
+ * This work is licensed under the
+ * Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Italy License.
+ * To view a copy of this license, visit
+ * http://creativecommons.org/licenses/by-nc-nd/3.0/it/
+ * or send a letter to
+ * Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+ *
+*/
+
 #include <ArduinoJson.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266mDNS.h>
@@ -22,11 +38,11 @@
 #include <EMailSender.h>
 #endif
 
-//#define ENABLE_CORS
+// #define ENABLE_CORS
 
-//#define EXTENDED_API
+// #define EXTENDED_API
 
-//#define MKSWIFI_DEBUG
+// #define MKSWIFI_DEBUG
 
 // Define where debug output will be printed.
 #define DEBUG_PRINTER Serial1
@@ -55,7 +71,7 @@ extern "C" {
 
 }
 
-char* firmwareVersion = "C1.0.4_201109_beta";
+char* firmwareVersion = "MISCHIANTI_v1.0";
 
 
 
@@ -669,7 +685,8 @@ void net_env_prepare()
   server.on("/configApp", HTTP_POST, postConfigFile, NULL);
   server.on("/configApp", HTTP_GET, getConfigFile, NULL);
 
-    server.on("/upload", HTTP_OPTIONS, sendCrossOriginHeader);
+  // curl -i -X POST "http://192.168.1.164/upload?X-Filename=prova.stl" -H "Content-Type: text/xml" --data-binary "@FBG5_prova.gcode"
+  server.on("/upload", HTTP_OPTIONS, sendCrossOriginHeader);
   server.onPrefix("/upload", HTTP_ANY, handleUpload, handleRrUpload);
 
 
@@ -1868,6 +1885,10 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
 //        webSocket.sendTXT(num, "{\"type\":\"connection\", \"connection\": true, \"simpleMessage\": "+String(readSingleMessage?"true":"false")+"}");
 
         isConnectedWebSocket = true;
+
+        memset(dbgStr, 0, sizeof(dbgStr));
+        sprintf((char *)dbgStr, "FWV:%s\r\n", firmwareVersion);
+        net_print((const uint8_t*)dbgStr, strlen((const char *)dbgStr));
 
             }
             break;
@@ -3428,7 +3449,7 @@ void onWifiConfig()
 {
   uint8_t num_ssids = refreshApWeb();
 
-  server.on("/", HTTP_GET, []() {
+  server.on("/update", HTTP_GET, []() {
     server.send(200, FPSTR(STR_MIME_TEXT_HTML), wifiConfigHtml);
   });
   server.on("/update_sketch", HTTP_GET, []() {
@@ -3549,10 +3570,10 @@ void fsHandler()
     return;
   }
 
-  #if 0
+  #if 1
   if (path.endsWith("/"))
   {
-    path += F("reprap.htm");            // default to reprap.htm as the index page
+    path += F("index.html");            // default to reprap.htm as the index page
   }
 
   #endif
