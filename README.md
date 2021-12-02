@@ -15,10 +15,10 @@ My solution was to modify the firmware to support the Web Socket and develop the
 I also decided to explain all the development phases of the project and in this article here I would like to expose the hardware infrastructure of the MKS WiFi card that interfaces with the Makerbase Robin Nano.
 
  - [MKS WIFI for Makerbase Robin: boards and how to wiring esp12 & NodeMCU](https://www.mischianti.org/2021/11/17/mks-wifi-for-makerbase-robin-boards-and-how-to-wiring-esp12-nodemcu-1/)
- - MKS WIFI for Makerbase Robin: PCB and how to compile & upload firmware
- - MKS WIFI for Makerbase Robin: communication protocol and Cura plugin
- - MKS WIFI for Makerbase Robin: web socket upgrade of the firmware
- - MKS WIFI for Makerbase Robin: BeePrint web interface with Camera on Flying Bear Ghost
+ - [MKS WIFI for Makerbase Robin: PCB and how to compile & upload firmware](https://www.mischianti.org/2021/11/21/mks-wifi-for-makerbase-robin-pcb-and-how-to-compile-upload-firmware-2/)
+ - [MKS WIFI for Makerbase Robin: communication protocol and Cura plugin](https://www.mischianti.org/2021/11/24/mks-wifi-for-makerbase-robin-communication-protocol-and-cura-plugin-3/)
+ - [MKS WIFI for Makerbase Robin: web socket upgrade of the firmware](https://www.mischianti.org/2021/11/28/mks-wifi-for-makerbase-robin-firmware-upgrade-and-new-web-socket-features-4/)
+ - [MKS WIFI for Makerbase Robin: BeePrint web interface with Camera on Flying Bear Ghost](https://www.mischianti.org/2021/12/02/mks-wifi-for-makerbase-robin-beeprint-web-interface-with-camera-on-flying-bear-ghost-5/)
 
 I add a Web Socket protocol to manage the communication via Web interface, and I create a responsive and complete Web Interface
 
