@@ -5,6 +5,9 @@
 
 Version 1.0
 
+CHANGELOG
+2021-12-03 Fix the mobile menu on WebView
+
 I bought a FlyingBear Ghost 5 with integrated WiFi module, but I discover that there is no web interface. I don’t know why they can’t add a basic user interface. Then I went to see the web interface the high-end Makerbase cards and realized that it was better they didn’t develop it.
 
 My solution was to modify the firmware to support the Web Socket and develop the Web interface. This feature is compatible with all Makerbase cards that have an MKS WiFi module.
