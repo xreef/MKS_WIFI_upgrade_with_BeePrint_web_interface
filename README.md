@@ -4,6 +4,7 @@
 ![](data/launcher-icon-3x.png?raw=true)
 
 Version 1.0
+Thanks to Aleksandr Shell for the russian language translation.
 
 CHANGELOG
 2021-12-03 Fix the mobile menu on WebView
