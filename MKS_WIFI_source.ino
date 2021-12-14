@@ -71,7 +71,7 @@ extern "C" {
 
 }
 
-char* firmwareVersion = "MISCHIANTI_v1.0";
+char* firmwareVersion = "MISCHIANTI_v1.1";
 
 
 
@@ -3324,6 +3324,13 @@ bool TryToConnect()
       EEPROM.get(BAK_ADDRESS_MANUAL_DNS, dns_static);
 
 //      WiFi.config(ip_static, gateway_staic, subnet_static, dns_static, dnsIP);
+      IPAddress dns1 = dns_static;
+      IPAddress gw = gateway_staic;
+      if (dns1.isSet()){
+
+      }else if (gw.isSet()){
+    	  dns_static = gw;
+      }
       WiFi.config(ip_static, gateway_staic, subnet_static, dns_static);
     }
 

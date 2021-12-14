@@ -3,11 +3,12 @@
 
 ![](data/launcher-icon-3x.png?raw=true)
 
-Version 1.0
+Version 1.1
 Thanks to Aleksandr Shell for the russian language translation.
 
-CHANGELOG
-2021-12-03 Fix the mobile menu on WebView
+##### Changelog
+ - 2021-12-14 BeePrint 1.1 Add Camera rotation features 
+ - 2021-12-03 BeePrint 1.0 Fix the mobile menu on WebView
 
 I bought a FlyingBear Ghost 5 with integrated WiFi module, but I discover that there is no web interface. I don’t know why they can’t add a basic user interface. Then I went to see the web interface the high-end Makerbase cards and realized that it was better they didn’t develop it.
 
