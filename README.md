@@ -7,6 +7,7 @@ Version 1.1
 Thanks to Aleksandr Shell for the russian language translation.
 
 ##### Changelog
+ - 2021-12-30 BeePrint 1.2 Add GCode sender widget
  - 2021-12-14 BeePrint 1.1 Add Camera rotation features 
  - 2021-12-03 BeePrint 1.0 Fix the mobile menu on WebView
 
