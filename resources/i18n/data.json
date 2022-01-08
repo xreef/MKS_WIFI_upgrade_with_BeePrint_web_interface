@@ -1,0 +1,565 @@
+{
+  "en": {
+    "layouts.set": "Layouts of the page are saved on device",
+    "layouts.home.add": "Element added to home page",
+    "layouts.home.remove": "Element removed from home page",
+
+    "menu.sidebar.home": "Home",
+    "menu.navbar.home": "Home",
+
+    "menu.sidebar.printerstats": "Heat and fan",
+    "menu.navbar.printerstats": "Heat and fan",
+
+    "menu.sidebar.movements": "Movements",
+    "menu.navbar.movements": "Movements",
+
+    "menu.sidebar.printing": "Printing",
+    "menu.navbar.printing": "Printing",
+
+    "menu.sidebar.stream": "Video",
+    "menu.navbar.stream": "Video",
+
+    "menu.sidebar.storage": "Storage",
+    "menu.navbar.storage": "Storage",
+
+    "menu.sidebar.daily": "Daily chart",
+    "menu.navbar.daily": "Daily chart",
+
+    "menu.sidebar.monthly": "Monthly chart",
+    "menu.navbar.monthly": "Monthly chart",
+
+    "menu.sidebar.configuration": "Configuration",
+    "menu.navbar.configuration": "Configuration",
+
+    "menu.sidebar.introduction": "Introduction",
+    "menu.navbar.introduction": "Introduction",
+
+    "date.label": "Date",
+
+    "chart.no_data": "No data",
+    "chart.no_production": "No data",
+    "chart.loading": "Loading...",
+
+    "chart.temperature.title": "Temperatures",
+    "chart.temperature.subtitle": "Extruders and Bed temperatures",
+    "chart.temperature.T0.label": "Primary extruder",
+    "chart.temperature.T1.label": "Secondary extruder",
+    "chart.temperature.B.label": "Bed",
+
+    "chart.production.battery.title": "Battery",
+
+    "informative.realtime.move.title": "Printer movement",
+    "informative.realtime.T0Temp.title": "Extruder 1",
+    "informative.realtime.T1Temp.title": "Extruder 2",
+
+    "informative.realtime.fan.title": "Fan speed",
+    "informative.realtime.fan.button_set": "Set Fan speed",
+    "informative.realtime.fan.text": "Last fan speed ",
+
+    "informative.temperature.T0Temp.title": "Extruder 1",
+    "informative.temperature.T1Temp.title": "Extruder 2",
+    "informative.realtime.bed.title": "Bed temp",
+    "informative.realtime.status.title": "Printer status",
+    "informative.realtime.status.button.resume": "Resume",
+    "informative.realtime.status.button.pause": "Pause",
+    "informative.realtime.status.button.stop": "Stop",
+    "informative.realtime.status.label.file": "File",
+    "informative.realtime.status.label.size": "Size",
+    "informative.realtime.status.label.elapsed_time": "Elapsed time",
+
+    "informative.realtime.video.title": "Video",
+    "informative.realtime.video.subtitle": "Video stream of the printer",
+
+    "last.update": "Last update",
+
+    "upload.success": "File {filename} was uploaded!",
+    "upload.failure": "File {filename} upload error! ({err})",
+
+    "box.file.upload.title": "File upload",
+    "box.file.upload.choose_file": "Choose file",
+    "box.file.upload.upload_and_print": "Upload and print",
+    "box.file.upload.upload": "Upload",
+    "box.file.upload.dialog.text": "File already exist, continue? A progressive will be added at the end of the file. And this file will always be used.",
+    "box.file.upload.subtitle": "Add file to the 3D printer SD",
+
+    "box.gcode.title": "GCode sender",
+    "box.gcode.subtitle": "Write on editor and send",
+    "box.gcode.send": "Send",
+    "box.gcode.placeholder": "Insert your gcode here",
+    "box.gcode.message.sended": "{numGcodeLine} GCode commands sended!",
+
+    "table.file.list.title": "File list",
+    "table.file.list.subtitle": "All files inside sd card",
+
+    "configuration.preferences.title": "Settings",
+    "configuration.preferences.subtitle": "Generic settings",
+    "configuration.preferences.update": "Update preferences",
+
+    "configuration.network.title": "Network configuration",
+    "configuration.network.subtitle": "Remember to set a correct static IP",
+
+    "configuration.network.staticIP.label": "Select a static IP",
+
+    "configuration.email.table.email":"EMail",
+    "configuration.email.notification.enabled.label": "Activate notification when printer finish job",
+
+    "configuration.network.update": "Update network settings",
+
+    "configuration.camera.title": "Camera configuration",
+    "configuration.camera.subtitle": "Use an esp32-cam like in the article",
+    "configuration.camera.streamingurl.label": "esp32-cam IP",
+    "configuration.camera.update": "Update camera configuration",
+    "configuration.camera.rotation.label": "Camera rotation",
+
+    "configuration.email.notification.title": "Notification settings",
+    "configuration.email.notification.finishprintemail.label": "Email for notification of finish print",
+    "configuration.email.notification.subtitle": "Configure Server SMTP first",
+    "configuration.email.notification.add": "New notification email",
+    "configuration.email.notification.add.modal.title":"Insert",
+    "configuration.email.notification.add.modal.no_email":"None",
+    "configuration.email.notification.add.modal.first_alarm":"First alarm",
+    "configuration.email.notification.add.modal.all_state_change":"At all state change",
+
+    "configuration.save.success": "Configuration saved successfully",
+    "configuration.save.failed": "Failed to save configuration <br>{err}",
+
+    "configuration.smtpserver.title": "Settings server SMTP",
+    "configuration.smtpserver.subtitle": "To receive notification you need configure SMTP server",
+    "configuration.smtpserver.update": "Update data of server SMTP",
+
+    "home.fab.tooltip": "Locally save current layouts of this page",
+
+    "page.intro": "<div><h2>Introduction</h2><div>To install this Web App activate the chrome features <b> Desktop PWAs</b></div><div>Copy this link and paste in your browser</div><div>chrome://flags/#enable-desktop-pwas</div></div>",
+
+    "websocket.open": "3D Printer connected",
+    "websocket.close": "3D Printer disconnected",
+    "websocket.error": "Error <br>Not connected!",
+
+    "websocket.message.preheat.sended": "Command pre heat for toot {tool} ad temp {preHeatTemp} sended!",
+    "websocket.message.preheat.button": "Pre-Heat",
+
+    "iframe.button.move": "Drag to move",
+    "iframe.button.close": "Click to close"
+  },
+  "pl": {
+    "layouts.set": "Układ strony został zapisany na urządzeniu",
+    "layouts.home.add": "Dodano element do strony głównej",
+    "layouts.home.remove": "Usunięto element ze strony głównej",
+
+    "menu.sidebar.home": "Panel główny",
+    "menu.navbar.home": "Panel główny",
+
+    "menu.sidebar.printerstats": "Grzałka i wentylator",
+    "menu.navbar.printerstats": "Grzałka i wentylator",
+
+    "menu.sidebar.movements": "Ruchy",
+    "menu.navbar.movements": "Ruchy",
+
+    "menu.sidebar.printing": "Drukowanie",
+    "menu.navbar.printing": "Drukowanie",
+
+    "menu.sidebar.stream": "Video",
+    "menu.navbar.stream": "Video",
+
+    "menu.sidebar.storage": "Pliki",
+    "menu.navbar.storage": "Pliki",
+
+    "menu.sidebar.daily": "Wykresy dzienne",
+    "menu.navbar.daily": "Wykresy dzienne",
+
+    "menu.sidebar.monthly": "Wykresy miesięczne",
+    "menu.navbar.monthly": "Wykresy miesięczne",
+
+    "menu.sidebar.configuration": "Konfiguracja",
+    "menu.navbar.configuration": "Konfiguracja",
+
+    "menu.sidebar.introduction": "Wprowadzenie",
+    "menu.navbar.introduction": "Wprowadzenie",
+
+    "date.label": "Data",
+
+    "chart.no_data": "Brak danych",
+    "chart.no_production": "Brak danych",
+    "chart.loading": "Ładowanie...",
+
+    "chart.temperature.title": "Temperatura",
+    "chart.temperature.subtitle": "Temperatura ekstrudera i stołu",
+    "chart.temperature.T0.label": "Pierwszy ekstruder",
+    "chart.temperature.T1.label": "Drugi ekstruder",
+    "chart.temperature.B.label": "Stół",
+
+    "chart.production.battery.title": "Bateria",
+
+    "informative.realtime.move.title": "Sterowanie",
+    "informative.realtime.T0Temp.title": "Ekstruder 1",
+    "informative.realtime.T1Temp.title": "Ekstruder 2",
+
+    "informative.realtime.fan.title": "Obroty wentylatora",
+    "informative.realtime.fan.button_set": "Ustawienie obrotów wentylatora",
+    "informative.realtime.fan.text": "Ostatnie obroty wentylatora",
+
+    "informative.temperature.T0Temp.title": "Ekstruder 1",
+    "informative.temperature.T1Temp.title": "Ekstruder 2",
+    "informative.realtime.bed.title": "Temperatura stołu",
+    "informative.realtime.status.title": "Status drukarki",
+    "informative.realtime.status.button.resume": "Wznów",
+    "informative.realtime.status.button.pause": "Pauza",
+    "informative.realtime.status.button.stop": "Stop",
+    "informative.realtime.status.label.file": "Plik",
+    "informative.realtime.status.label.size": "Rozmiar",
+    "informative.realtime.status.label.elapsed_time": "Upływ czasu",
+
+    "informative.realtime.video.title": "Video",
+    "informative.realtime.video.subtitle": "Strumieniowanie obrazu",
+
+    "last.update": "Ostatnia aktualizacja",
+
+    "upload.success": "Załadowano plik {filename}",
+    "upload.failure": "Błąd ładowania pliku {filename}! ({err})",
+
+    "box.file.upload.title": "Wyślij plik",
+    "box.file.upload.choose_file": "Wybierz plik",
+    "box.file.upload.upload_and_print": "Wyślij plik i drukuj",
+    "box.file.upload.upload": "Wysyłanie",
+    "box.file.upload.dialog.text": "Plik już istnieje. Kontynuować? Do nazwy zostanie dopisany kolejny numer. Będziesz mógł go użyć później.",
+    "box.file.upload.subtitle": "Wyślij plik na kartę SD",
+
+    "box.gcode.title": "konsola GCODE",
+    "box.gcode.subtitle": "Użyj edytora i wyślij",
+    "box.gcode.send": "Wyślij",
+    "box.gcode.placeholder": "Wklej tutaj GCODE",
+    "box.gcode.message.sended": "Wysłano {numGcodeLine} komend GCODE!",
+
+    "table.file.list.title": "Lista plików",
+    "table.file.list.subtitle": "Wszystkie pliki na karcie SD",
+
+    "configuration.preferences.title": "Ustawienia",
+    "configuration.preferences.subtitle": "Główne ustawienia",
+    "configuration.preferences.update": "Aktualizacja ustawień",
+
+    "configuration.network.title": "Konfiguracja sieci",
+    "configuration.network.subtitle": "Pamiętaj, by ustawić statyczny adres IP",
+
+    "configuration.network.staticIP.label": "Wybierz statyczne IP",
+
+    "configuration.email.table.email": "email",
+    "configuration.email.notification.enabled.label": "Włącz powiadomienie na koniec drukowania",
+
+    "configuration.network.update": "Aktualizacja ustawień sieciowych",
+
+    "configuration.camera.title": "Konfiguracja kamery",
+    "configuration.camera.subtitle": "Użyj typowych ustawień dla kamer esp32, jak opisano w artykule",
+    "configuration.camera.streamingurl.label": "esp32-cam IP",
+    "configuration.camera.update": "Aktualizacja ustawień kamery",
+    "configuration.camera.rotation.label": "Obrót kamery",
+
+    "configuration.email.notification.title": "Ustawienia powiadomień",
+    "configuration.email.notification.finishprintemail.label": "Email, an który zostaną przesłane powiadomienia o końcu druku",
+    "configuration.email.notification.subtitle": "Najpierw skonfiguruj serwer SMTP",
+    "configuration.email.notification.add": "Nowy email dla powiadomień",
+    "configuration.email.notification.add.modal.title": "Wstaw",
+    "configuration.email.notification.add.modal.no_email": "Brak",
+    "configuration.email.notification.add.modal.first_alarm": "Pierwszy alarm",
+    "configuration.email.notification.add.modal.all_state_change": "Przy wszystkich zmianach stanu ",
+
+    "configuration.save.success": "Zapisano konfigurację",
+    "configuration.save.failed": "Błąd zapisu konfiguracji <br>{err}",
+
+    "configuration.smtpserver.title": "Ustawienia serwera SMTP",
+    "configuration.smtpserver.subtitle": "Aby otrzymywać powiadomienia, musisz skonfigurować serwer SMTP",
+    "configuration.smtpserver.update": "Zaktualizuj dane serwera SMTP",
+
+    "home.fab.tooltip": "Zapisz lokalnie bieżące układy tej strony",
+
+    "page.intro": "<div><h2>Wprowadzenie</h2><div>Aby zainstalować aplikację uaktywnij w Chrome aplikacje progresywne (Desktop PWA), </div><div>skopiuj link i wklej w przeglądarce a następnie kliknij ikonę w prawym górnym rogu okna przeglądarki</div><div>chrome://flags/#enable-desktop-pwas</div></div> ",
+
+    "websocket.open": "Połączono z drukarką",
+    "websocket.close": "Brak połączenia z drukarką",
+    "websocket.error": "Błąd <br> brak połączenia!",
+
+    "websocket.message.preheat.sended": "Przesłano polecenie wstępnego podgrzewania dla narzędzia {tool} do temperatury {preHeatTemp}",
+    "websocket.message.preheat.button": "Nagrzewanie wstępne",
+
+    "iframe.button.move": "Przeciągniej by ruszyć",
+    "iframe.button.close": "Kliknij by zamknąć"
+  },
+  "it": {
+    "layouts.set": "Il layout è stato salvato sul dispositivo",
+    "layouts.home.add": "Elemento aggiunto alla home page",
+    "layouts.home.remove": "Elemento rimosso dalla home page",
+
+    "menu.sidebar.home": "Home",
+    "menu.navbar.home": "Home",
+
+    "menu.sidebar.printerstats": "Calore e ventola",
+    "menu.navbar.printerstats": "Calore e ventola",
+
+    "menu.sidebar.storage": "Memoria",
+    "menu.navbar.storage": "Memoria",
+
+    "menu.sidebar.printing": "Stampa",
+    "menu.navbar.printing": "Stampa",
+
+    "menu.sidebar.movements": "Movimenti",
+    "menu.navbar.movements": "Movimenti",
+
+
+    "menu.sidebar.monthly": "Grafici mensili",
+    "menu.navbar.monthly": "Grafici mensili",
+
+    "menu.sidebar.stream": "Video",
+    "menu.navbar.stream": "Video",
+
+    "menu.sidebar.configuration": "Configurazione",
+    "menu.navbar.configuration": "Configurazione",
+
+    "menu.sidebar.introduction": "Introduzione",
+    "menu.navbar.introduction": "Introduzione",
+
+    "date.label": "Data",
+
+    "chart.no_data": "Nessun dato",
+    "chart.no_production": "Nessun dato",
+    "chart.loading": "Caricamento",
+
+    "chart.temperature.T0.label": "Estrusore principale",
+    "chart.temperature.T1.label": "Estrusore secondario",
+    "chart.temperature.B.label": "Bed",
+
+    "chart.production.battery.title": "Batteria",
+
+    "chart.temperature.title": "Temperature",
+    "chart.temperature.subtitle": "Temperature Estrusori e Bed",
+
+    "informative.realtime.move.title": "Movimenti stampante",
+
+    "informative.realtime.video.title": "Video",
+    "informative.realtime.video.subtitle": "Streaming video della stampante",
+
+    "informative.realtime.fan.title": "Velocità ventola",
+    "informative.realtime.fan.button_set": "Imposta velocità",
+    "informative.temperature.T0Temp.title": "Estrusore 1",
+    "informative.temperature.T1Temp.title": "Estrusore 2",
+    "informative.realtime.bed.title": "Temperatura bed",
+    "informative.realtime.status.title": "Stato stampante",
+    "informative.realtime.status.button.resume": "Riavvia",
+    "informative.realtime.status.button.pause": "Pausa",
+    "informative.realtime.status.button.stop": "Stop",
+    "informative.realtime.status.label.file": "File",
+    "informative.realtime.status.label.size": "Dimensione",
+    "informative.realtime.status.label.elapsed_time": "Tempo trascorso",
+
+    "informative.realtime.T0Temp.title": "Estrusore 1",
+    "informative.realtime.T1Temp.title": "Estrusore 2",
+
+    "last.update": "Ultimo agg.",
+
+    "upload.success": "Il file {filename} caricato!",
+    "upload.failure": "Il file {filename} errore di upload! ({err})",
+
+    "box.file.upload.upload_and_print": "Carica e stampa",
+    "box.file.upload.upload": "Carica",
+    "box.file.upload.choose_file": "Seleziona file",
+
+    "box.file.upload.title": "Caricamento file",
+    "box.file.upload.subtitle": "Aggiungi un file all'SD della stampante",
+
+     "box.file.upload.dialog.text": "Il file esiste già, continuare? Verrà apposto un progressivo al termine del file. E sarà usato sempre questo file.",
+
+    "box.gcode.title": "Invio GCode",
+    "box.gcode.subtitle": "Scrivi ed invia",
+    "box.gcode.send": "Invio",
+    "box.gcode.placeholder": "Inserisci il tuo gcode qui",
+    "box.gcode.message.sended": "Inviati {numGcodeLine} comandi GCode!",
+
+    "table.file.list.title": "Lista file",
+    "table.file.list.subtitle": "Tutti i file dell'SD Card",
+
+    "configuration.preferences.title": "Preferenze",
+    "configuration.preferences.subtitle": "Preferenze generiche",
+    "configuration.preferences.update": "Aggiorna preferenze",
+
+    "configuration.network.title": "Configurazione di rete",
+    "configuration.network.subtitle": "Ricorda di impostare un indirizzo IP statico",
+
+    "configuration.network.staticIP.label": "Seleziona un IP statico",
+
+    "configuration.email.notification.enabled.label": "Attiva notifiche al completamento stampa",
+
+    "configuration.email.table.email":"EMail",
+    "configuration.email.table.name":"Nome",
+    "configuration.network.update": "Aggiorna dati rete",
+
+    "configuration.camera.title": "Configurazione camera",
+    "configuration.camera.subtitle": "Usa un esp32-cam modificato come da articolo",
+    "configuration.camera.streamingurl.label": "IP dell'esp32-cam",
+    "configuration.camera.update": "Aggiorna dati camera",
+    "configuration.camera.rotation.label": "Rotazione camera",
+
+    "configuration.email.notification.title": "Impostazioni di notifica",
+    "configuration.email.notification.finishprintemail.label": "Email per notifica completamento job",
+    "configuration.email.notification.subtitle": "Configura il server SMTP prima",
+    "configuration.email.notification.add": "Aggiungi email per notifiche",
+    "configuration.email.notification.add.modal.title":"Inserisci",
+
+    "configuration.save.success": "Configurazione salvata correttamente",
+    "configuration.save.failed": "Errore al salvataggio configurazione {br}{err}",
+
+    "configuration.smtpserver.title": "Impostazioni server SMTP",
+    "configuration.smtpserver.subtitle": "Per ricevere qualsiasi tipo di notifica è necessario configurare il server SMTP",
+    "configuration.smtpserver.update": "Aggiorna i dati del server SMTP",
+
+    "home.fab.tooltip": "Salva localmente i layouts di questa pagina",
+
+    "page.intro": "<div><h2>Introduzione</h2><div>Per installare questa WebApp è necessario abilitare questa features di Chrome <b> Desktop PWAs</b></div><div>Copia incolla questo link sul browser </div><div>chrome://flags/#enable-desktop-pwas</div></div>",
+
+    "websocket.message.preheat.sended": "Il comando di preriscaldamento del {tool} alla temperatura {preHeatTemp} mandato!",
+    "websocket.message.preheat.button": "Pre-Riscaldamento",
+
+    "websocket.open": "Stampante connessa",
+    "websocket.close": "Stampante disconnessa",
+    "websocket.error": "Errore <br>Impossibile stabilire una connessione",
+
+    "iframe.button.move": "Trascina per muovere",
+    "iframe.button.close": "Clicca per chiudere"
+  },
+  "ru": {
+    "layouts.set": "Макет страницы сохраняются на устройстве",
+    "layouts.home.add": "Элемент добавлен на главную страницу",
+    "layouts.home.remove": "Элемент удален с домашней страницы",
+
+    "menu.sidebar.home": "Начало",
+    "menu.navbar.home": "Начало",
+
+    "menu.sidebar.printerstats": "Температура и охлаждение",
+    "menu.navbar.printerstats": "Температура и охлаждение",
+
+    "menu.sidebar.movements": "Движение",
+    "menu.navbar.movements": "Движение",
+
+    "menu.sidebar.printing": "Печать",
+    "menu.navbar.printing": "Печать",
+
+    "menu.sidebar.stream": "Видео",
+    "menu.navbar.stream": "Видео",
+
+    "menu.sidebar.storage": "SD карта",
+    "menu.navbar.storage": "SD карта",
+
+    "menu.sidebar.daily": "График по дням",
+    "menu.navbar.daily": "График по дням",
+
+    "menu.sidebar.monthly": "График помесячно",
+    "menu.navbar.monthly": "График помесячно",
+
+    "menu.sidebar.configuration": "Конфигурация",
+    "menu.navbar.configuration": "Конфигурация",
+
+    "menu.sidebar.introduction": "Вступление",
+    "menu.navbar.introduction": "Вступление",
+
+    "date.label": "Дата",
+
+    "chart.no_data": "Нет данных",
+    "chart.no_production": "Нет данных",
+    "chart.loading": "Загрузка...",
+
+    "chart.temperature.title": "Температура",
+    "chart.temperature.subtitle": "Температура экструдера и стола",
+    "chart.temperature.T0.label": "Экструдер 1",
+    "chart.temperature.T1.label": "Экструдер 2",
+    "chart.temperature.B.label": "Стол",
+
+    "chart.production.battery.title": "Аккумулятор",
+
+    "informative.realtime.move.title": "Движение принтера",
+    "informative.realtime.T0Temp.title": "Экструдер 1",
+    "informative.realtime.T1Temp.title": "Экструдер 2",
+
+    "informative.realtime.fan.title": "Скорость вентилятора",
+    "informative.realtime.fan.button_set": "Установка скорости вентилятора",
+    "informative.temperature.T0Temp.title": "Экструдер 1",
+    "informative.temperature.T1Temp.title": "Экструдер 2",
+    "informative.realtime.bed.title": "Температура стола",
+    "informative.realtime.status.title": "Статус принтера",
+    "informative.realtime.status.button.resume": "Продолжить",
+    "informative.realtime.status.button.pause": "Пауза",
+    "informative.realtime.status.button.stop": "Стоп",
+    "informative.realtime.status.label.file": "Файл",
+    "informative.realtime.status.label.size": "Размер",
+    "informative.realtime.status.label.elapsed_time": "Время от старта",
+
+    "informative.realtime.video.title": "Видео",
+    "informative.realtime.video.subtitle": "Видеопоток принтера",
+
+    "last.update": "Время обновления",
+
+    "upload.success": "Файл {filename} загружен!",
+    "upload.failure": "Файл {filename} ошибка загрузки! ({err})",
+
+    "box.file.upload.title": "File upload",
+    "box.file.upload.choose_file": "Выберите файл",
+    "box.file.upload.upload_and_print": "Загрузить и напечатать",
+    "box.file.upload.upload": "Upload",
+    "box.file.upload.dialog.text": "File already exist, continue? A progressive will be added at the end of the file. And this file will always be used.",
+    "box.file.upload.subtitle": "Добавить файл на SD-карту 3D-принтера",
+
+    "box.gcode.title": "Отправитель GCode",
+    "box.gcode.subtitle": "Напишите и отправьте",
+    "box.gcode.send": "Отправлять",
+    "box.gcode.placeholder": "Вставьте сюда свой gcode",
+    "box.gcode.message.sended": "Отправлено {numGcodeLine} команд GCode!",
+
+    "table.file.list.title": "Список файлов",
+    "table.file.list.subtitle": "Все файлы на SD-карте",
+
+    "configuration.preferences.title": "Конфигурация",
+    "configuration.preferences.subtitle": "Основные настройки",
+    "configuration.preferences.update": "Сохранить настройки",
+
+    "configuration.network.title": "Конфигурация сети",
+    "configuration.network.subtitle": "Remember to set a correct static IP",
+
+    "configuration.network.staticIP.label": "Использовать статический IP",
+
+    "configuration.email.table.email":"EMail",
+    "configuration.email.notification.enabled.label": "Активировать уведомление, когда принтер завершит печать",
+
+    "configuration.network.update": "Сохранить настройки сети",
+
+    "configuration.camera.title": "Настройки камеры",
+    "configuration.camera.subtitle": "Use an esp32-cam like in the article",
+    "configuration.camera.streamingurl.label": "esp32-cam IP",
+    "configuration.camera.update": "Сохранить настройки камеры",
+    "configuration.camera.rotation.label": "Вращение камеры",
+    "configuration.email.notification.title": "Notification settings",
+    "configuration.email.notification.finishprintemail.label": "Email для уведомления о завершении печати",
+    "configuration.email.notification.subtitle": "Configure Server SMTP first",
+    "configuration.email.notification.add": "Email для уведомлений",
+    "configuration.email.notification.add.modal.title":"Вставить",
+    "configuration.email.notification.add.modal.no_email":"Нет",
+    "configuration.email.notification.add.modal.first_alarm":"Только первое исзменение состояния",
+    "configuration.email.notification.add.modal.all_state_change":"Любое изменение состояния",
+
+    "configuration.save.success": "Конфигурация сохранена",
+    "configuration.save.failed": "Ошибка сохранения конфигурации <br>{err}",
+
+    "configuration.smtpserver.title": "Конфигурация SMTP сервера",
+    "configuration.smtpserver.subtitle": "Для получения уведомлений вам необходимо настроить SMTP-сервер",
+    "configuration.smtpserver.update": "Обновить данные сервера SMTP",
+
+    "home.fab.tooltip": "Сохранить локально текущий макет страницы",
+
+    "page.intro": "<div><h2>Introduction</h2><div>To install this Web App activate the chrome features <b> Desktop PWAs</b></div><div>Copy this link and paste in your browser</div><div>chrome://flags/#enable-desktop-pwas</div></div>",
+
+    "websocket.open": "3D принтер подключен",
+    "websocket.close": "3D принтер отключен",
+    "websocket.error": "Ошибка <br>Нет соединения!",
+
+    "websocket.message.preheat.sended": "Команда преднагрева для {tool} на температуру {preHeatTemp} отправлена!",
+    "websocket.message.preheat.button": "Преднагрев",
+
+    "iframe.button.move": "Перетаскивать",
+    "iframe.button.close": "Нажмите, чтобы закрыть"
+  }
+}
