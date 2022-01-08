@@ -3,10 +3,13 @@
 
 ![](data/launcher-icon-3x.png?raw=true)
 
-Version 1.1
+Version 1.4
 Thanks to Aleksandr Shell for the russian language translation.
+Thanks to [reprapy](https://reprapy.pl/) for the polish language translation.
 
 ##### Changelog
+ - 2022-01-08 BeePrint 1.4 MKS WiFi 1.2 Static IP configuration, mDNS, polish translation and minor fix
+ - 2022-01-02 BeePrint 1.3 Polish language
  - 2021-12-30 BeePrint 1.2 Add GCode sender widget
  - 2021-12-14 BeePrint 1.1 Add Camera rotation features 
  - 2021-12-03 BeePrint 1.0 Fix the mobile menu on WebView

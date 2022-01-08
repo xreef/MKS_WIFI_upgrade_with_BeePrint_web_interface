@@ -38,11 +38,11 @@
 #include <EMailSender.h>
 #endif
 
-// #define ENABLE_CORS
+#define ENABLE_CORS
 
 // #define EXTENDED_API
 
-// #define MKSWIFI_DEBUG
+#define MKSWIFI_DEBUG
 
 // Define where debug output will be printed.
 #define DEBUG_PRINTER Serial1
@@ -71,12 +71,12 @@ extern "C" {
 
 }
 
-char* firmwareVersion = "MISCHIANTI_v1.1";
+char* firmwareVersion = "MISCHIANTI_v1.2";
 
 
 
 char M3_TYPE = TFT28;
-#define CONFIG_FILE_HEAP 512
+#define CONFIG_FILE_HEAP 1024
 
 boolean GET_VERSION_OK = false;
 
@@ -120,7 +120,7 @@ uint32_t ip_static, subnet_static, gateway_staic, dns_static;
 #define LIST_MIN_LEN_SAVE_FILE  100
 #define LIST_MAX_LEN_SAVE_FILE  (1024 * 100)
 
-char ssid[32], pass[64], webhostname[64];
+char ssid[32], pass[64], webhostname[64] = {"beeprint"};
 //IPAddress sessions[MAX_LOGGED_IN_CLIENTS];
 uint8_t loggedInClientsNum = 0;
 //MDNSResponder mdns;
@@ -518,6 +518,11 @@ void postConfigFile() {
   uint8_t readBuf[postLength];
   DynamicJsonDocument doc(postLength);
 
+  DEBUG_PRINT(F("POST LENGHT: "));
+  DEBUG_PRINTLN((long)postLength);
+  DEBUG_PRINT(F("FREE: "));
+  DEBUG_PRINTLN(ESP.getMaxFreeBlockSize());
+
   if((postLength > sizeof(readBuf)) || (postLength <= 0))
   {
     server.send(400, FPSTR(STR_MIME_TEXT_PLAIN), FPSTR("Bad Request"));
@@ -639,6 +644,142 @@ void net_env_prepare()
     server.onNotFound(fsHandler);
   }
 
+//  DEBUG_PRINT(F("Read file: "));
+//  if (SPIFFS.exists(F("/mc/config.txt"))){
+//
+//
+//    File configFile = SPIFFS.open(F("/mc/config.txt"), "r");
+//     if (configFile){
+//    	 //		 while (configFile.available())
+//    	 //		    {
+//    	 //		      Serial1.write(configFile.read());
+//    	 //		    }
+//    	 //
+//    	 		DEBUG_PRINTLN(F("done."));
+//    	 		DynamicJsonDocument doc(CONFIG_FILE_HEAP);
+//    	 		ArduinoJson::DeserializationError error = deserializeJson(doc, configFile);
+//    	 		// close the file:
+//    	 		configFile.close();
+//
+//    	 		if (error){
+//    	 			// if the file didn't open, print an error:
+//    	 			DEBUG_PRINT(F("Error parsing JSON "));
+//    	 			DEBUG_PRINTLN(error.c_str());
+//
+//    	 		}else{
+//    	 			JsonObject rootObj = doc.as<JsonObject>();
+////    	 			JsonObject preferences = rootObj[F("preferences")];
+////    	 			bool isGTM = preferences.containsKey(F("GTM"));
+////    	 			if (isGTM){
+////    	 				JsonObject GTM = preferences[F("GTM")];
+////    	 				bool isValue = GTM.containsKey(F("value"));
+////    	 				if (isValue){
+////    	 					int value = GTM[F("value")];
+////
+////    	 					DEBUG_PRINT(F("Impostazione GTM+"))
+////    	 					DEBUG_PRINTLN(value)
+////
+////    	 //					timeClient.setTimeOffset(value*60*60);
+////    	 					timeOffset = value*60*60;
+////    	 				}
+////    	 			}
+////
+////    	 			bool isDST = preferences.containsKey(F("DST"));
+////    	 			if (isDST){
+////    	 				JsonObject DST = preferences[F("DST")];
+////    	 				bool isCode = DST.containsKey(F("code"));
+////    	 				if (isCode){
+////    	 					const String code = DST[F("code")];
+////    	 //					const String desc = DST[F("description")];
+////
+////    	 					codeDST = code;
+////    	 					DEBUG_PRINT(F("Impostazione DST "))
+////    	 					DEBUG_PRINTLN(code)
+////    	 //					DEBUG_PRINT(F("Description DST "))
+////    	 //					DEBUG_PRINTLN(desc)
+////
+////    	 //					timeClient.setTimeOffset(value*60*60);
+////    	 //					timeOffset = value*60*60;
+////    	 				}
+////    	 			}else{
+////    	 				codeDST = "GTM";
+////    	 			}
+//
+//    	 			JsonObject serverConfig = rootObj[F("server")];
+//    	 			bool isStatic = serverConfig[F("isStatic")];
+//    	 			if (isStatic==true){
+//    	 				const char* address = serverConfig[F("address")];
+//    	 				const char* gatway = serverConfig[F("gatway")];
+//    	 				const char* netMask = serverConfig[F("netMask")];
+//
+//    	 				const char* dns1 = serverConfig[F("dns1")];
+//    	 				const char* dns2 = serverConfig[F("dns2")];
+//
+//    	 				const char* _hostname = serverConfig[F("hostname")];
+//    	 				//start-block2
+//    	 				IPAddress _ip;
+//    	 				bool parseSuccess;
+//    	 				parseSuccess = _ip.fromString(address);
+//    	 				if (parseSuccess) {
+//    	 					DEBUG_PRINTLN(F("Address correctly parsed!"));
+//    	 				}
+//
+//    	 				IPAddress _gw;
+//    	 				parseSuccess = _gw.fromString(gatway);
+//    	 				if (parseSuccess) {
+//    	 					DEBUG_PRINTLN(F("Gatway correctly parsed!"));
+//    	 				}
+//
+//    	 				IPAddress _sn;
+//    	 				parseSuccess = _sn.fromString(netMask);
+//    	 				if (parseSuccess) {
+//    	 					DEBUG_PRINTLN(F("Subnet correctly parsed!"));
+//    	 				}
+//
+//    	 				IPAddress _dns1;
+//    	 				IPAddress _dns2;
+//    	 				bool isDNS = false;
+//    	 				if (dns1 && sizeof(_dns1) > 7 && dns2 && sizeof(_dns2) > 7 ){
+//    	 					parseSuccess = _dns1.fromString(dns1);
+//    	 					if (parseSuccess) {
+//    	 						DEBUG_PRINTLN(F("DNS 1 correctly parsed!"));
+//    	 						isDNS = true;
+//    	 					}
+//
+//    	 					parseSuccess = _dns2.fromString(dns2);
+//    	 					if (parseSuccess) {
+//    	 						DEBUG_PRINTLN(F("DNS 2 correctly parsed!"));
+//    	 					}
+//    	 					//end-block2
+//    	 				}
+//
+//    	 				DEBUG_PRINT(F("Set static data..."));
+//    	 				if (isDNS){
+//    	 					  WiFi.config(_ip, _gw, _sn, _dns1, _dns2);
+//    	 				}else{
+//    	 					 WiFi.config(_ip, _gw, _sn);
+//    	 				}
+////
+//    	 				if (_hostname && sizeof(_hostname)>1){
+////    	 					strcpy(hostname, _hostname);
+//						  if (!MDNS.begin(_hostname)) {             // Start the mDNS responder for esp8266.local
+//							DEBUG_PRINTLN(F("Error setting up MDNS responder!"));
+//						  }
+//						  DEBUG_PRINTLN(F("mDNS responder started"));
+//
+//    	 				}
+//    	 				// IPAddress(85, 37, 17, 12), IPAddress(8, 8, 8, 8)
+//    	 	//
+//    	 	//		    emailSend.setEMailLogin("smtp.mischianti@gmail.com");
+//    	 				DEBUG_PRINTLN(F("done."));
+//    	 			}
+//    	 		}
+//     }
+//    	 	}else{
+//    DEBUG_PRINTLN(F("File not found!"));
+//  }
+
+
 
   server.servePrinter(true);
 
@@ -695,7 +836,7 @@ void net_env_prepare()
   webSocket.begin();
   webSocket.onEvent(webSocketEvent);
 
-    node_monitor.begin(UDP_PORT);
+  node_monitor.begin(UDP_PORT);
 
 
 }
@@ -3265,7 +3406,9 @@ bool TryToConnect()
   {
     EEPROM.get(BAK_ADDRESS_WIFI_MODE, wifi_mode);
     EEPROM.get(BAK_ADDRESS_WEB_HOST, webhostname);
-    //wifi_station_set_hostname(webhostname);     // must do thia before calling WiFi.begin()
+    wifi_station_set_hostname(webhostname);     // must do thia before calling WiFi.begin()
+
+
 
   }
   else
@@ -3338,7 +3481,16 @@ bool TryToConnect()
 
     WiFi.begin(ssid, pass);
 
+    if(eeprom_valid[0] == 0x0a && webhostname && sizeof(webhostname)>1 && sizeof(webhostname)<50)
+    {
+	  DEBUG_PRINT(F("mDNS hostname:"));
+	  DEBUG_PRINTLN(webhostname);
 
+	  if (!MDNS.begin(webhostname)) {             // Start the mDNS responder for esp8266.local
+		DEBUG_PRINTLN(F("Error setting up MDNS responder!"));
+	  }
+	  DEBUG_PRINTLN(F("mDNS responder started"));
+    }
 
     while (WiFi.status() != WL_CONNECTED)
     {
@@ -3439,7 +3591,9 @@ uint8_t refreshApWeb()
   wifiConfigHtml += F("<br /><br /><table border='0'><tr><td><label for=\"password\">WIFIæ‹¢æ½ž</label><input type=\"text\" id=\"hidden_ssid\" name=\"hidden_ssid\" /></td></tr><tr><td><label for=\"password\">è„™è„ºè„—æ¯›æ‹¢æ½ž</label>");wifiConfigHtml += F("<input type=\" PASSWORD_INPUT_TYPE \" id=\"password\" name=\"password\" /></td></tr><tr><td colspan=2 align=\"right\"> <input type=\"submit\" value=\"è„¡çŒ«è„°è„™è™�åž„è„°è„´è„�ä¹ˆ\"></td></tr></table></form></div></div></body></html>");
 #endif
   wifiConfigHtml = F("<html><head><meta http-equiv='Content-Type' content='text/html;'><title>MKS WIFI</title><style>body{background: #b5ff6a;}.config{margin: 150px auto;width: 600px;height: 600px;overflow: hidden;</style></head>");
-  wifiConfigHtml += F("<body><div class='config'></caption><br /><h4><a href='www.mischianti.org'>www.mischianti.org</a> </h4><h4>MKS WIFI MISCHIANTI v0.1</h4><br /><h2>Update</h2>");
+  wifiConfigHtml += F("<body><div class='config'></caption><br /><h4><a href='www.mischianti.org'>www.mischianti.org</a> </h4><h4>MKS WIFI MISCHIANTI");
+  wifiConfigHtml += firmwareVersion;
+  wifiConfigHtml += F("</h4><br /><h2>Update</h2>");
   wifiConfigHtml += F("<form method='POST' action='update_sketch' enctype='multipart/form-data'><table border='0'><tr><td>wifi firmware:</td><td><input type='file' name='update' ></td><td><input type='submit' value='update'></td></tr></table></form>");
   wifiConfigHtml += F("<div>To upload Web part restore the original firmware, upload MksWifi_WebView than upload new firmware.</div>");
   // wifiConfigHtml += F("<form method='POST' action='update_spiffs' enctype='multipart/form-data'><tr><td>web view:</td><td><input type='file' name='update' ></td><td><input type='submit' value='update'></td></tr></table></form>");
@@ -3466,6 +3620,103 @@ void onWifiConfig()
     server.send(200, FPSTR(STR_MIME_TEXT_HTML), wifiConfigHtml);
   });
 
+  server.on("/get_cfg_ip", HTTP_GET, []() {
+	  DEBUG_PRINTLN(F("get_cfg_ip"));
+
+	  setCrossOrigin();
+
+	  uint8_t isStatic = 0;
+	  if (manual_valid == 0xa) {
+		  isStatic = 1;
+	  }
+	return server.send(200, FPSTR("application/json"), ("{\"ip\":\""+(IPAddress(ip_static).isSet()?IPAddress(ip_static).toString():"")+"\",\"sm\":\""+(IPAddress(subnet_static).isSet()?IPAddress(subnet_static).toString():"")+"\",\"gw\":\""+(IPAddress(gateway_staic).isSet()?IPAddress(gateway_staic).toString():"")+"\",\"dns1\":\""+(IPAddress(dns_static).isSet()?IPAddress(dns_static).toString():"")+"\",\"isStatic\":"+String(isStatic)+",\"webhostname\":\""+webhostname+"\"}"));
+  });
+
+
+  server.on("/update_cfg_ip", HTTP_GET, []() {
+    //Serial.printf("on http post\n");
+
+	  DEBUG_PRINTLN(F("update_cfg_ip"));
+
+	  setCrossOrigin();
+
+    if (server.args() <= 0)
+    {
+      server.send(500, FPSTR(STR_MIME_TEXT_PLAIN), F("Got no data, go back and retry"));
+      return;
+    }
+
+    IPAddress ip;
+    IPAddress sm;
+    IPAddress gw;
+    IPAddress dns1;
+
+    uint8_t isStatic = 255;
+    for (uint8_t e = 0; e < server.args(); e++) {
+      String argument = server.arg(e);
+      urldecode(argument);
+      if (server.argName(e) == "ip") ip.fromString(argument);
+      else if (server.argName(e) == "sm") sm.fromString(argument);
+      else if (server.argName(e) == "gw") gw.fromString(argument);
+      else if (server.argName(e) == "dns1") dns1.fromString(argument);
+      else if (server.argName(e) == "isStatic") isStatic = argument.toInt(); // 0xff disabled 0xa enabled
+      else if (server.argName(e) == "webhostname") argument.toCharArray(webhostname, 64);
+    }
+
+
+    ip_static = ip.v4();
+    subnet_static = sm.v4();
+	gateway_staic = gw.v4();
+	dns_static = dns1.v4();
+
+	if (isStatic==0) {
+		manual_valid = 0xff;
+	} else if (isStatic==1) {
+		manual_valid = 0xa;
+		if (!(ip.isSet() && sm.isSet() && gw.isSet() && dns1.isSet())) {
+			return server.send(400, FPSTR(STR_MIME_APPLICATION_JSON), F("{\"msg\":\"Configure unsuccessfully! Wrong address value.\",\"error\":true,\"status\":\"KO\"}"));
+
+		}
+	}
+
+	DEBUG_PRINT(F("ip"));DEBUG_PRINTLN(ip_static);
+	DEBUG_PRINT(F("sm"));DEBUG_PRINTLN(subnet_static);
+	DEBUG_PRINT(F("gw"));DEBUG_PRINTLN(gateway_staic);
+	DEBUG_PRINT(F("dns"));DEBUG_PRINTLN(dns_static);
+
+	DEBUG_PRINT(F("manual_valid"));DEBUG_PRINTLN(manual_valid);
+
+	if (manual_valid == 0xff || manual_valid == 0xa) {
+		//Serial.printf("on http post:ready eeprom\n");
+
+	//    char valid[1] = {0x0a};
+
+		EEPROM.put(BAK_ADDRESS_MANUAL_IP, ip_static);
+		EEPROM.put(BAK_ADDRESS_MANUAL_MASK, subnet_static);
+		EEPROM.put(BAK_ADDRESS_MANUAL_GATEWAY, gateway_staic);
+		EEPROM.put(BAK_ADDRESS_MANUAL_DNS, dns_static);
+		EEPROM.put(BAK_ADDRESS_MANUAL_IP_FLAG, manual_valid);
+	    EEPROM.put(BAK_ADDRESS_WEB_HOST, webhostname);
+
+		EEPROM.commit();
+
+	//    EEPROM.put(BAK_ADDRESS_MANUAL_IP_FLAG, 0xff);
+	//    manual_valid = 0xff;
+	//
+	//    EEPROM.commit();
+
+
+		//Serial.printf("on http post:ready send to client\n");
+		server.send(200, FPSTR(STR_MIME_APPLICATION_JSON), F("{\"msg\":\"Configure successfully! Use new IP to connect.\",\"error\":false,\"status\":\"OK\"}"));
+
+
+		//Serial.printf("on http post:after commit\n");
+		delay(300);
+		ESP.restart();
+	} else {
+		server.send(400, FPSTR(STR_MIME_APPLICATION_JSON), F("{\"msg\":\"Configure unsuccessfully! Wrong Manual Flag.\",\"error\":true,\"status\":\"KO\"}"));
+	}
+  });
 
   server.on("/update_cfg", HTTP_GET, []() {
     //Serial.printf("on http post\n");
@@ -3482,7 +3733,7 @@ void onWifiConfig()
       else if (server.argName(e) == "ssid") argument.toCharArray(ssid, 32);//ssid = server.arg(e);
       else if (server.argName(e) == "hidden_ssid") argument.toCharArray(hidden_ssid, 32);//ssid = server.arg(e);
       else if (server.argName(e) == "wifi_mode") argument.toCharArray(wifi_mode, 15);//ssid = server.arg(e);
-      //else if (server.argName(e) == "webhostname") argument.toCharArray(webhostname, 64);
+//      else if (server.argName(e) == "webhostname") argument.toCharArray(webhostname, 64);
     }
 
     /*if(hidden_ssid[0] != 0)

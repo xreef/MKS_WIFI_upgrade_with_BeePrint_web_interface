@@ -1,3 +1,7 @@
+#ifndef POOLED_STRINGS_H
+#define POOLED_STRINGS_H
+
+
 #include <pgmspace.h>
 const char STR_EEPROM_DUMMY[] PROGMEM = "AAA";
 const char STR_EEPROM_DEFAULT_WEBPASSWORD[] PROGMEM = "reprap";
@@ -26,4 +30,5 @@ const char STR_JSON_ERR_500_IS_UPLOADING_ALREADY[] PROGMEM = "{\"err\":\"ERROR 5
 const char STR_JSON_ERR_500_IS_BUSY[] PROGMEM = "{\"err\":\"ERROR 500: IS BUSY\"}";
 
 // End
+#endif //POOLED_STRINGS_H
 
