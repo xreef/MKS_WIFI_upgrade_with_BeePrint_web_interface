@@ -9,6 +9,7 @@
       name="description"
       content="BeePrint: Web interface for MKS WIFI (FlyingBear Ghost 5) 3D printer"
     />
+    <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" href="/launcher-icon-4x.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -27,6 +28,9 @@
     <title>BeePrint</title>
   </head>
   <body>
+    <div id="preloader">
+		  <div id="loader"></div>
+	  </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -40,13 +44,14 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    window.onload = function () {document.getElementById("preloader").classList.add('loaded');}
+  </script>
   <script id="settings" src="settings.js"></script>
-
   <script language="javascript" type="text/javascript">
     var d = new Date();
     document.getElementById("settings").src = "settings.js?v=" +d.getTime();
   </script>
-
   <script src="bundle.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -55,7 +60,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-VCSWZ9FQ76');
   </script>
 
