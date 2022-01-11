@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Italy License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/it/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
-=======
-This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Italy License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/it/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
->>>>>>> branch 'master' of https://github.com/xreef/MKS_WIFI_MISCHIANTI.git
+
