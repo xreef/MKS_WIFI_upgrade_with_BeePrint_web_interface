@@ -428,8 +428,8 @@
     "layouts.home.add": "Элемент добавлен на главную страницу",
     "layouts.home.remove": "Элемент удален с домашней страницы",
 
-    "menu.sidebar.home": "Начало",
-    "menu.navbar.home": "Начало",
+    "menu.sidebar.home": "Главная",
+    "menu.navbar.home": "FLYING BEAR GHOST",
 
     "menu.sidebar.printerstats": "Температура и охлаждение",
     "menu.navbar.printerstats": "Температура и охлаждение",
@@ -440,8 +440,8 @@
     "menu.sidebar.printing": "Печать",
     "menu.navbar.printing": "Печать",
 
-    "menu.sidebar.stream": "Видео",
-    "menu.navbar.stream": "Видео",
+    "menu.sidebar.stream": "ESP камера",
+    "menu.navbar.stream": "ESP камера",
 
     "menu.sidebar.storage": "SD карта",
     "menu.navbar.storage": "SD карта",
@@ -492,22 +492,22 @@
     "informative.realtime.video.title": "Видео",
     "informative.realtime.video.subtitle": "Видеопоток принтера",
 
-    "last.update": "Время обновления",
+    "last.update": "Обновлено",
 
     "upload.success": "Файл {filename} загружен!",
     "upload.failure": "Файл {filename} ошибка загрузки! ({err})",
 
-    "box.file.upload.title": "File upload",
+    "box.file.upload.title": "Файл загружен",
     "box.file.upload.choose_file": "Выберите файл",
     "box.file.upload.upload_and_print": "Загрузить и напечатать",
-    "box.file.upload.upload": "Upload",
-    "box.file.upload.dialog.text": "File already exist, continue? A progressive will be added at the end of the file. And this file will always be used.",
+    "box.file.upload.upload": "Загрузить",
+    "box.file.upload.dialog.text": "Файл уже существует, продолжить? В конце файла будет добавлен прогрессив. И этот файл будет использоваться всегда.",
     "box.file.upload.subtitle": "Добавить файл на SD-карту 3D-принтера",
 
     "box.gcode.title": "Отправитель GCode",
     "box.gcode.subtitle": "Напишите и отправьте",
     "box.gcode.send": "Отправлять",
-    "box.gcode.placeholder": "Вставьте сюда свой gcode",
+    "box.gcode.placeholder": "Вставьте сюда свой GCode",
     "box.gcode.message.sended": "Отправлено {numGcodeLine} команд GCode!",
 
     "table.file.list.title": "Список файлов",
@@ -518,7 +518,7 @@
     "configuration.preferences.update": "Сохранить настройки",
 
     "configuration.network.title": "Конфигурация сети",
-    "configuration.network.subtitle": "Remember to set a correct static IP",
+    "configuration.network.subtitle": "Не забудьте установить правильный статический IP",
 
     "configuration.network.staticIP.label": "Использовать статический IP",
 
@@ -528,13 +528,13 @@
     "configuration.network.update": "Сохранить настройки сети",
 
     "configuration.camera.title": "Настройки камеры",
-    "configuration.camera.subtitle": "Use an esp32-cam like in the article",
-    "configuration.camera.streamingurl.label": "esp32-cam IP",
+    "configuration.camera.subtitle": "Используйте камеру ESP32, как в статье.",
+    "configuration.camera.streamingurl.label": "ESP32-Cam IP",
     "configuration.camera.update": "Сохранить настройки камеры",
     "configuration.camera.rotation.label": "Вращение камеры",
-    "configuration.email.notification.title": "Notification settings",
+    "configuration.email.notification.title": "Настройки уведомлений",
     "configuration.email.notification.finishprintemail.label": "Email для уведомления о завершении печати",
-    "configuration.email.notification.subtitle": "Configure Server SMTP first",
+    "configuration.email.notification.subtitle": "Вначале настройте сервер SMTP",
     "configuration.email.notification.add": "Email для уведомлений",
     "configuration.email.notification.add.modal.title":"Вставить",
     "configuration.email.notification.add.modal.no_email":"Нет",
@@ -550,7 +550,7 @@
 
     "home.fab.tooltip": "Сохранить локально текущий макет страницы",
 
-    "page.intro": "<div><h2>Introduction</h2><div>To install this Web App activate the chrome features <b> Desktop PWAs</b></div><div>Copy this link and paste in your browser</div><div>chrome://flags/#enable-desktop-pwas</div></div>",
+    "page.intro": "<div><h2>Введение</h2><div>Чтобы установить это веб-приложение, активируйте функции Chrome. <b> Настольный PWA PWAs</b></div><div>Скопируйте эту ссылку и вставьте в свой браузер</div><div>chrome://flags/#enable-desktop-pwas</div></div>",
 
     "websocket.open": "3D принтер подключен",
     "websocket.close": "3D принтер отключен",
