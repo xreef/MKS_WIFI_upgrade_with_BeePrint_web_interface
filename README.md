@@ -3,6 +3,9 @@
 
 ![](data/launcher-icon-3x.png?raw=true)
 
+
+##### I am looking for collaborators for the Web interface created in React / Redux, if you are interested write to renzo@mischianti.org. If we manage to form a small group then I will release that part on GitHub as well.
+
 Version 1.4
 Thanks to Aleksandr Shell for the russian language translation.
 Thanks to [reprapy](https://reprapy.pl/) for the polish language translation.
