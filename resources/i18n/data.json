@@ -541,7 +541,7 @@
     "configuration.email.notification.add": "Email для уведомлений",
     "configuration.email.notification.add.modal.title":"Вставить",
     "configuration.email.notification.add.modal.no_email":"Нет",
-    "configuration.email.notification.add.modal.first_alarm":"Только первое исзменение состояния",
+    "configuration.email.notification.add.modal.first_alarm":"Только первое изменение состояния",
     "configuration.email.notification.add.modal.all_state_change":"Любое изменение состояния",
 
     "configuration.save.success": "Конфигурация сохранена",
