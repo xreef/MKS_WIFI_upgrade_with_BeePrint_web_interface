@@ -81,6 +81,7 @@
     "box.file.upload.upload": "Upload",
     "box.file.upload.dialog.text": "File already exist, continue? A progressive will be added at the end of the file. And this file will always be used.",
     "box.file.upload.subtitle": "Add file to the 3D printer SD",
+    "box.file.upload.fileNameTooLong": "File name too long, max file size 36 your {fileLength}",
 
     "box.gcode.title": "GCode sender",
     "box.gcode.subtitle": "Write on editor and send",
@@ -229,6 +230,7 @@
     "box.gcode.send": "Wyślij",
     "box.gcode.placeholder": "Wklej tutaj GCODE",
     "box.gcode.message.sended": "Wysłano {numGcodeLine} komend GCODE!",
+    "box.file.upload.fileNameTooLong": "Nazwa pliku jest za długa, maksymalny rozmiar pliku 36 Twój {fileLength}",
 
     "table.file.list.title": "Lista plików",
     "table.file.list.subtitle": "Wszystkie pliki na karcie SD",
@@ -363,14 +365,14 @@
 
     "box.file.upload.title": "Caricamento file",
     "box.file.upload.subtitle": "Aggiungi un file all'SD della stampante",
-
-     "box.file.upload.dialog.text": "Il file esiste già, continuare? Verrà apposto un progressivo al termine del file. E sarà usato sempre questo file.",
+    "box.file.upload.dialog.text": "Il file esiste già, continuare? Verrà apposto un progressivo al termine del file. E sarà usato sempre questo file.",
 
     "box.gcode.title": "Invio GCode",
     "box.gcode.subtitle": "Scrivi ed invia",
     "box.gcode.send": "Invio",
     "box.gcode.placeholder": "Inserisci il tuo gcode qui",
     "box.gcode.message.sended": "Inviati {numGcodeLine} comandi GCode!",
+    "box.file.upload.fileNameTooLong": "Nome file troppo lungo, dimensione massima del file 36 tuo {fileLength}",
 
     "table.file.list.title": "Lista file",
     "table.file.list.subtitle": "Tutti i file dell'SD Card",
@@ -509,6 +511,7 @@
     "box.gcode.send": "Отправлять",
     "box.gcode.placeholder": "Вставьте сюда свой GCode",
     "box.gcode.message.sended": "Отправлено {numGcodeLine} команд GCode!",
+    "box.file.upload.fileNameTooLong": "Имя файла слишком длинное, максимальный размер файла - 36 {fileLength}",
 
     "table.file.list.title": "Список файлов",
     "table.file.list.subtitle": "Все файлы на SD-карте",
