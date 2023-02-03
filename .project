@@ -34,47 +34,47 @@
 		<link>
 			<name>core/core</name>
 			<type>2</type>
-			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266</locationURI>
+			<location>D:/program/Sloeber/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/cores/esp8266</location>
 		</link>
 		<link>
 			<name>core/variant</name>
 			<type>2</type>
-			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/variants/nodemcu</locationURI>
+			<location>D:/program/Sloeber/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/variants/nodemcu</location>
 		</link>
 		<link>
 			<name>libraries/ArduinoJson</name>
 			<type>2</type>
-			<locationURI>ECLIPSE_HOME/arduinoPlugin/libraries/ArduinoJson/6.18.3</locationURI>
+			<location>D:/program/Sloeber/arduinoPlugin/libraries/ArduinoJson/6.19.4</location>
 		</link>
 		<link>
 			<name>libraries/EEPROM</name>
 			<type>2</type>
-			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/libraries/EEPROM</locationURI>
+			<location>D:/program/Sloeber/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/libraries/EEPROM</location>
 		</link>
 		<link>
 			<name>libraries/ESP8266HTTPClient</name>
 			<type>2</type>
-			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266HTTPClient</locationURI>
+			<location>D:/program/Sloeber/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266HTTPClient</location>
 		</link>
 		<link>
 			<name>libraries/ESP8266WiFi</name>
 			<type>2</type>
-			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi</locationURI>
+			<location>D:/program/Sloeber/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266WiFi</location>
 		</link>
 		<link>
 			<name>libraries/ESP8266mDNS</name>
 			<type>2</type>
-			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266mDNS</locationURI>
+			<location>D:/program/Sloeber/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/libraries/ESP8266mDNS</location>
 		</link>
 		<link>
 			<name>libraries/Hash</name>
 			<type>2</type>
-			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/libraries/Hash</locationURI>
+			<location>D:/program/Sloeber/arduinoPlugin/packages/esp8266/hardware/esp8266/2.7.4/libraries/Hash</location>
 		</link>
 		<link>
 			<name>libraries/WebSockets</name>
 			<type>2</type>
-			<locationURI>ECLIPSE_HOME/arduinoPlugin/libraries/WebSockets/2.3.5</locationURI>
+			<location>D:/program/Sloeber/arduinoPlugin/libraries/WebSockets/2.3.6</location>
 		</link>
 	</linkedResources>
 </projectDescription>

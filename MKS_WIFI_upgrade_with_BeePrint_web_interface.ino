@@ -131,7 +131,7 @@ MksHTTPUpdateServer httpUpdater;
 char cloud_host[96] = "baizhongyun.cn";
 int cloud_port = 12345;
 boolean cloud_enable_flag = false;
-int cloud_link_state = 0; // 0:??Â¨Â®?Â¡Ãª?1:Â¨Âº1?Â¨Â¹Â¡Ãª??Â¡Ã¤Â¨Â¢??Â¨Â®Â¡Ãª?2:Â¨Â°?Â¨Â¢??Â¨Â®Â¡Ãª??Â¡Ã¤Â¡Ã£Â¨Â®?Â¡Â§Â¡Ãª?3:Â¨Â°?Â¡Ã£Â¨Â®?Â¡Â§
+int cloud_link_state = 0; // 0:??Ã‚Â¨Ã‚Â®?Ã‚Â¡ÃƒÂª?1:Ã‚Â¨Ã‚Âº1?Ã‚Â¨Ã‚Â¹Ã‚Â¡ÃƒÂª??Ã‚Â¡ÃƒÂ¤Ã‚Â¨Ã‚Â¢??Ã‚Â¨Ã‚Â®Ã‚Â¡ÃƒÂª?2:Ã‚Â¨Ã‚Â°?Ã‚Â¨Ã‚Â¢??Ã‚Â¨Ã‚Â®Ã‚Â¡ÃƒÂª??Ã‚Â¡ÃƒÂ¤Ã‚Â¡ÃƒÂ£Ã‚Â¨Ã‚Â®?Ã‚Â¡Ã‚Â§Ã‚Â¡ÃƒÂª?3:Ã‚Â¨Ã‚Â°?Ã‚Â¡ÃƒÂ£Ã‚Â¨Ã‚Â®?Ã‚Â¡Ã‚Â§
 
 #ifdef SEND_EMAIL
 //EMailSender emailSend("", "");
@@ -229,9 +229,9 @@ void cloud_get_file_list();
 typedef enum
 {
   TRANSFER_IDLE,
-  TRANSFER_BEGIN, //?aç¯“åž„???ç¯“ç¯“Yéš†ç›²æ‹¢é™‡?ç¯“åž„ç¯“æŽ³??éš†èŒ«å¨„è„¤?D-ç¯“æŽ³ç¯“å¨„(Dç¯“ç¯“ç¯“æŽ³a?ç¯“åº�ç¯“æ½ž?M110)
-  TRANSFER_GET_FILE, //?ç¯“åž„ç¯“ç¯“????tç¯“æ½žy?Yéš†é”š?ç¯“åº�Dç¯“æ½žy?Yç¯“é™‡-??readyç¯“æŽ³y??
-  TRANSFER_READY, //å¨„è„¤ç¯“ç¯“éš†ç›²ystm32ç¯“åº�|éš†ç›²eç¯“æŽ³y??D?o?
+  TRANSFER_BEGIN, //?aÃ§Â¯â€œÃ¥Å¾â€ž???Ã§Â¯â€œÃ§Â¯â€œYÃ©Å¡â€ Ã§â€ºÂ²Ã¦â€¹Â¢Ã©â„¢â€¡?Ã§Â¯â€œÃ¥Å¾â€žÃ§Â¯â€œÃ¦Å½Â³??Ã©Å¡â€ Ã¨Å’Â«Ã¥Â¨â€žÃ¨â€žÂ¤?D-Ã§Â¯â€œÃ¦Å½Â³Ã§Â¯â€œÃ¥Â¨â€ž(DÃ§Â¯â€œÃ§Â¯â€œÃ§Â¯â€œÃ¦Å½Â³a?Ã§Â¯â€œÃ¥Âºï¿½Ã§Â¯â€œÃ¦Â½Å¾?M110)
+  TRANSFER_GET_FILE, //?Ã§Â¯â€œÃ¥Å¾â€žÃ§Â¯â€œÃ§Â¯â€œ????tÃ§Â¯â€œÃ¦Â½Å¾y?YÃ©Å¡â€ Ã©â€�Å¡?Ã§Â¯â€œÃ¥Âºï¿½DÃ§Â¯â€œÃ¦Â½Å¾y?YÃ§Â¯â€œÃ©â„¢â€¡-??readyÃ§Â¯â€œÃ¦Å½Â³y??
+  TRANSFER_READY, //Ã¥Â¨â€žÃ¨â€žÂ¤Ã§Â¯â€œÃ§Â¯â€œÃ©Å¡â€ Ã§â€ºÂ²ystm32Ã§Â¯â€œÃ¥Âºï¿½|Ã©Å¡â€ Ã§â€ºÂ²eÃ§Â¯â€œÃ¦Å½Â³y??D?o?
   TRANSFER_FRAGMENT
 
 } TRANS_STATE;
@@ -392,7 +392,7 @@ private:
 
 };
 
-class FILE_FIFO gFileFifo; //?-??éš†å�¤????ç¯“å¨„éˆ§??ç¯“C??????éš†èŒ«??????fifo
+class FILE_FIFO gFileFifo; //?-??Ã©Å¡â€ Ã¥ï¿½Â¤????Ã§Â¯â€œÃ¥Â¨â€žÃ©Ë†Â§??Ã§Â¯â€œC??????Ã©Å¡â€ Ã¨Å’Â«??????fifo
 
 
 
@@ -2754,20 +2754,20 @@ void do_transfer()
 #define ESP_TYPE_WIFI_CTRL    (uint8_t)0x9
 
 
-uint8_t esp_msg_buf[UART_RX_BUFFER_SIZE] = {0}; //éº“å¿™éº“åž„éº“åª’éº“å¨„è„Œé“†ç¢Œè„›è„¢åª’æˆ®è„»
-uint16_t esp_msg_index = 0; //è„¨éº“è„°èµ‚è„®æ¯›
+uint8_t esp_msg_buf[UART_RX_BUFFER_SIZE] = {0}; //Ã©Âºâ€œÃ¥Â¿â„¢Ã©Âºâ€œÃ¥Å¾â€žÃ©Âºâ€œÃ¥Âªâ€™Ã©Âºâ€œÃ¥Â¨â€žÃ¨â€žÅ’Ã©â€œâ€ Ã§Â¢Å’Ã¨â€žâ€ºÃ¨â€žÂ¢Ã¥Âªâ€™Ã¦Ë†Â®Ã¨â€žÂ»
+uint16_t esp_msg_index = 0; //Ã¨â€žÂ¨Ã©Âºâ€œÃ¨â€žÂ°Ã¨Âµâ€šÃ¨â€žÂ®Ã¦Â¯â€º
 
 typedef struct
 {
   uint8_t head; //0xa5
-  uint8_t type; //0x0:è„¡çŒ«è„°è„™è„¥é…¶è„—èŽ½è™�è„¦è„¢åª’,0x1:éº“è²Œè„«éš†ç¦„ç…¤è„¨è„œè„§åž„,0x2:è„¥èµ‚éº“èŠ¦è„¨è„œè„§åž„,0x3:è„ªçŸ›é²�æ‹¢è„¨è„œè„§åž„
-  uint16_t dataLen; //è„¢åª’æˆ®è„»é²�é™‡éœ²è„ 
-  uint8_t *data; //è„«è„¨è„¨æ�‚è„¢åª’æˆ®è„»
+  uint8_t type; //0x0:Ã¨â€žÂ¡Ã§Å’Â«Ã¨â€žÂ°Ã¨â€žâ„¢Ã¨â€žÂ¥Ã©â€¦Â¶Ã¨â€žâ€”Ã¨Å½Â½Ã¨â„¢ï¿½Ã¨â€žÂ¦Ã¨â€žÂ¢Ã¥Âªâ€™,0x1:Ã©Âºâ€œÃ¨Â²Å’Ã¨â€žÂ«Ã©Å¡â€ Ã§Â¦â€žÃ§â€¦Â¤Ã¨â€žÂ¨Ã¨â€žÅ“Ã¨â€žÂ§Ã¥Å¾â€ž,0x2:Ã¨â€žÂ¥Ã¨Âµâ€šÃ©Âºâ€œÃ¨Å Â¦Ã¨â€žÂ¨Ã¨â€žÅ“Ã¨â€žÂ§Ã¥Å¾â€ž,0x3:Ã¨â€žÂªÃ§Å¸â€ºÃ©Â²ï¿½Ã¦â€¹Â¢Ã¨â€žÂ¨Ã¨â€žÅ“Ã¨â€žÂ§Ã¥Å¾â€ž
+  uint16_t dataLen; //Ã¨â€žÂ¢Ã¥Âªâ€™Ã¦Ë†Â®Ã¨â€žÂ»Ã©Â²ï¿½Ã©â„¢â€¡Ã©Å“Â²Ã¨â€žÂ 
+  uint8_t *data; //Ã¨â€žÂ«Ã¨â€žÂ¨Ã¨â€žÂ¨Ã¦ï¿½â€šÃ¨â€žÂ¢Ã¥Âªâ€™Ã¦Ë†Â®Ã¨â€žÂ»
   uint8_t tail; // 0xfc
 } ESP_PROTOC_FRAME;
 
 
-/*è·¯ç¢Œç¦„è„´è„¢åª’è„³èŒ…è„°è„¨è„›é²�è„³è„°è·¯æ²¡é²�æžšè„§è„°è„³å�¯è„­èŽ½ç¢Œè„›è„£æ¢…è„ªåª’æ½žè„œæ‹¢å�¢éº“è„«0é©´é™‹è„¢å½•,è„ ä¹ˆè™�ç¦„éº“å¿™è„­è„·è„­è²Œè·¯ç¢Œç¦„è„´-1*/
+/*Ã¨Â·Â¯Ã§Â¢Å’Ã§Â¦â€žÃ¨â€žÂ´Ã¨â€žÂ¢Ã¥Âªâ€™Ã¨â€žÂ³Ã¨Å’â€¦Ã¨â€žÂ°Ã¨â€žÂ¨Ã¨â€žâ€ºÃ©Â²ï¿½Ã¨â€žÂ³Ã¨â€žÂ°Ã¨Â·Â¯Ã¦Â²Â¡Ã©Â²ï¿½Ã¦Å¾Å¡Ã¨â€žÂ§Ã¨â€žÂ°Ã¨â€žÂ³Ã¥ï¿½Â¯Ã¨â€žÂ­Ã¨Å½Â½Ã§Â¢Å’Ã¨â€žâ€ºÃ¨â€žÂ£Ã¦Â¢â€¦Ã¨â€žÂªÃ¥Âªâ€™Ã¦Â½Å¾Ã¨â€žÅ“Ã¦â€¹Â¢Ã¥ï¿½Â¢Ã©Âºâ€œÃ¨â€žÂ«0Ã©Â©Â´Ã©â„¢â€¹Ã¨â€žÂ¢Ã¥Â½â€¢,Ã¨â€žÂ Ã¤Â¹Ë†Ã¨â„¢ï¿½Ã§Â¦â€žÃ©Âºâ€œÃ¥Â¿â„¢Ã¨â€žÂ­Ã¨â€žÂ·Ã¨â€žÂ­Ã¨Â²Å’Ã¨Â·Â¯Ã§Â¢Å’Ã§Â¦â€žÃ¨â€žÂ´-1*/
 static int32_t charAtArray(const uint8_t *_array, uint32_t _arrayLen, uint8_t _char)
 {
   uint32_t i;
@@ -2823,7 +2823,7 @@ static void net_msg_handle(uint8_t * msg, uint16_t msgLen)
 
   //0x01:AP
   //0x02:Client
-  //0x03:AP+Client(?Y2??éš†çŸ›3?)
+  //0x03:AP+Client(?Y2??Ã©Å¡â€ Ã§Å¸â€º3?)
   if((msg[0] != 0x01) && (msg[0] != 0x02))
     return;
   cfg_mode = msg[0];
@@ -3200,7 +3200,7 @@ void esp_data_parser(char *cmdRxBuf, int len)
   int32_t head_pos;
   int32_t tail_pos;
   uint16_t cpyLen;
-  int16_t leftLen = len; //è„¢æ‹¢è„«è„¿é²�é™‡éœ²è„ 
+  int16_t leftLen = len; //Ã¨â€žÂ¢Ã¦â€¹Â¢Ã¨â€žÂ«Ã¨â€žÂ¿Ã©Â²ï¿½Ã©â„¢â€¡Ã©Å“Â²Ã¨â€žÂ 
   uint8_t loop_again = 0;
   int i;
 
@@ -3217,7 +3217,7 @@ void esp_data_parser(char *cmdRxBuf, int len)
   {
     loop_again = 0;
 
-    /* 1. è™�èŒ…è„®è„ªè„°éš†è„¥è·¯*/
+    /* 1. Ã¨â„¢ï¿½Ã¨Å’â€¦Ã¨â€žÂ®Ã¨â€žÂªÃ¨â€žÂ°Ã©Å¡â€ Ã¨â€žÂ¥Ã¨Â·Â¯*/
     if(esp_msg_index != 0)
     {
       head_pos = 0;
@@ -3233,7 +3233,7 @@ void esp_data_parser(char *cmdRxBuf, int len)
     //  net_print((const uint8_t *)esp_msg_buf, esp_msg_index);
       if(tail_pos == -1)
       {
-        //è„™ç¦„è„«è„¨è„°éš†è„¦è™�
+        //Ã¨â€žâ„¢Ã§Â¦â€žÃ¨â€žÂ«Ã¨â€žÂ¨Ã¨â€žÂ°Ã©Å¡â€ Ã¨â€žÂ¦Ã¨â„¢ï¿½
         if(esp_msg_index >= sizeof(esp_msg_buf))
         {
           memset(esp_msg_buf, 0, sizeof(esp_msg_buf));
@@ -3249,12 +3249,12 @@ void esp_data_parser(char *cmdRxBuf, int len)
     //  net_print((const uint8_t *)"esp_data_parser1\n");
       if(head_pos == -1)
       {
-        //è„™ç¦„è„«è„¨è„°éš†è„¥è·¯
+        //Ã¨â€žâ„¢Ã§Â¦â€žÃ¨â€žÂ«Ã¨â€žÂ¨Ã¨â€žÂ°Ã©Å¡â€ Ã¨â€žÂ¥Ã¨Â·Â¯
         return;
       }
       else
       {
-        //è„§è„ ç¦„æ½žéº“å¿™ç¢Œé™†buf
+        //Ã¨â€žÂ§Ã¨â€žÂ Ã§Â¦â€žÃ¦Â½Å¾Ã©Âºâ€œÃ¥Â¿â„¢Ã§Â¢Å’Ã©â„¢â€ buf
         memset(esp_msg_buf, 0, sizeof(esp_msg_buf));
         memcpy(esp_msg_buf, &cmdRxBuf[len - leftLen + head_pos], leftLen - head_pos);
 
@@ -3269,14 +3269,14 @@ void esp_data_parser(char *cmdRxBuf, int len)
         //net_print((const uint8_t *)"esp_data_parser2\n", strlen((const char *)"esp_data_parser2\n"));
         if(tail_pos == -1)
         {
-          //è„®è„ªç¢Œé™†è„°éš†è„¥è·¯æ‹¢å�¢è„™ç¦„è„«è„¨è„°éš†è„¦è™�
+          //Ã¨â€žÂ®Ã¨â€žÂªÃ§Â¢Å’Ã©â„¢â€ Ã¨â€žÂ°Ã©Å¡â€ Ã¨â€žÂ¥Ã¨Â·Â¯Ã¦â€¹Â¢Ã¥ï¿½Â¢Ã¨â€žâ„¢Ã§Â¦â€žÃ¨â€žÂ«Ã¨â€žÂ¨Ã¨â€žÂ°Ã©Å¡â€ Ã¨â€žÂ¦Ã¨â„¢ï¿½
           return;
         }
 
       }
     }
     //net_print((const uint8_t *)"esp_data_parser3\n");
-    /*3. è„®è„ªç¢Œé™†è„¥é”šè„®æ²¡ç¢Œè„›è„ªç¦„è„°éš† , è„œè„¨éœ²è„§è„¢åª’æˆ®è„»é²�é™‡éœ²è„ */
+    /*3. Ã¨â€žÂ®Ã¨â€žÂªÃ§Â¢Å’Ã©â„¢â€ Ã¨â€žÂ¥Ã©â€�Å¡Ã¨â€žÂ®Ã¦Â²Â¡Ã§Â¢Å’Ã¨â€žâ€ºÃ¨â€žÂªÃ§Â¦â€žÃ¨â€žÂ°Ã©Å¡â€  , Ã¨â€žÅ“Ã¨â€žÂ¨Ã©Å“Â²Ã¨â€žÂ§Ã¨â€žÂ¢Ã¥Âªâ€™Ã¦Ë†Â®Ã¨â€žÂ»Ã©Â²ï¿½Ã©â„¢â€¡Ã©Å“Â²Ã¨â€žÂ */
     esp_frame.type = esp_msg_buf[1];
 
     if((esp_frame.type != ESP_TYPE_NET) && (esp_frame.type != ESP_TYPE_PRINTER)
@@ -3285,7 +3285,7 @@ void esp_data_parser(char *cmdRxBuf, int len)
        && (esp_frame.type != ESP_TYPE_WID) && (esp_frame.type != ESP_TYPE_SCAN_WIFI)
        && (esp_frame.type != ESP_TYPE_MANUAL_IP) && (esp_frame.type != ESP_TYPE_WIFI_CTRL))
     {
-      //è„¢åª’æˆ®è„»è„Œè„¿è„¨è„¥è™�ç¦„è„®åª’è„ è·¯æ‹¢å�¢éœ²é™‹è„�ç…¤
+      //Ã¨â€žÂ¢Ã¥Âªâ€™Ã¦Ë†Â®Ã¨â€žÂ»Ã¨â€žÅ’Ã¨â€žÂ¿Ã¨â€žÂ¨Ã¨â€žÂ¥Ã¨â„¢ï¿½Ã§Â¦â€žÃ¨â€žÂ®Ã¥Âªâ€™Ã¨â€žÂ Ã¨Â·Â¯Ã¦â€¹Â¢Ã¥ï¿½Â¢Ã©Å“Â²Ã©â„¢â€¹Ã¨â€žï¿½Ã§â€¦Â¤
       memset(esp_msg_buf, 0, sizeof(esp_msg_buf));
       esp_msg_index = 0;
       //net_print((const uint8_t *)"type err\n", strlen("type err\n"));
@@ -3294,10 +3294,10 @@ void esp_data_parser(char *cmdRxBuf, int len)
     //net_print((const uint8_t *)"esp_data_parser4\n");
     esp_frame.dataLen = esp_msg_buf[2] + (esp_msg_buf[3] << 8);
 
-    /*è„¢åª’æˆ®è„»é²�é™‡éœ²è„ è™�ç¦„è„®åª’è„ è·¯*/
+    /*Ã¨â€žÂ¢Ã¥Âªâ€™Ã¦Ë†Â®Ã¨â€žÂ»Ã©Â²ï¿½Ã©â„¢â€¡Ã©Å“Â²Ã¨â€žÂ Ã¨â„¢ï¿½Ã§Â¦â€žÃ¨â€žÂ®Ã¥Âªâ€™Ã¨â€žÂ Ã¨Â·Â¯*/
     if(4 + esp_frame.dataLen > sizeof(esp_msg_buf))
     {
-      //è„¢åª’æˆ®è„»é²�é™‡éœ²è„ è™�ç¦„è„®åª’è„ è·¯æ‹¢å�¢éœ²é™‹è„�ç…¤
+      //Ã¨â€žÂ¢Ã¥Âªâ€™Ã¦Ë†Â®Ã¨â€žÂ»Ã©Â²ï¿½Ã©â„¢â€¡Ã©Å“Â²Ã¨â€žÂ Ã¨â„¢ï¿½Ã§Â¦â€žÃ¨â€žÂ®Ã¥Âªâ€™Ã¨â€žÂ Ã¨Â·Â¯Ã¦â€¹Â¢Ã¥ï¿½Â¢Ã©Å“Â²Ã©â„¢â€¹Ã¨â€žï¿½Ã§â€¦Â¤
       memset(esp_msg_buf, 0, sizeof(esp_msg_buf));
       esp_msg_index = 0;
       //net_print((const uint8_t *)"len err\n", strlen("len err\n"));
@@ -3306,14 +3306,14 @@ void esp_data_parser(char *cmdRxBuf, int len)
 
     if(esp_msg_buf[4 + esp_frame.dataLen] != ESP_PROTOC_TAIL)
     {
-      //è„°éš†è„¦è™�è™�ç¦„è„®åª’è„ è·¯æ‹¢å�¢éœ²é™‹è„�ç…¤
+      //Ã¨â€žÂ°Ã©Å¡â€ Ã¨â€žÂ¦Ã¨â„¢ï¿½Ã¨â„¢ï¿½Ã§Â¦â€žÃ¨â€žÂ®Ã¥Âªâ€™Ã¨â€žÂ Ã¨Â·Â¯Ã¦â€¹Â¢Ã¥ï¿½Â¢Ã©Å“Â²Ã©â„¢â€¹Ã¨â€žï¿½Ã§â€¦Â¤
       memset(esp_msg_buf, 0, sizeof(esp_msg_buf));
       //net_print((const uint8_t *)"tail err\n", strlen("tail err\n"));
       esp_msg_index = 0;
       return;
     }
 
-    /*4. æŽ³éº“è„®è„®è„Œè„¿è„¨è„¥è·¯è„°å�¤å†’éº“å¨„è„Œé“†è„¢åª’æˆ®è„»*/
+    /*4. Ã¦Å½Â³Ã©Âºâ€œÃ¨â€žÂ®Ã¨â€žÂ®Ã¨â€žÅ’Ã¨â€žÂ¿Ã¨â€žÂ¨Ã¨â€žÂ¥Ã¨Â·Â¯Ã¨â€žÂ°Ã¥ï¿½Â¤Ã¥â€ â€™Ã©Âºâ€œÃ¥Â¨â€žÃ¨â€žÅ’Ã©â€œâ€ Ã¨â€žÂ¢Ã¥Âªâ€™Ã¦Ë†Â®Ã¨â€žÂ»*/
     esp_frame.data = &esp_msg_buf[4];
 
 
@@ -3371,7 +3371,7 @@ void esp_data_parser(char *cmdRxBuf, int len)
       default:
         break;
     }
-    /*5. æŽ³è„©è„ªè„©éº“å¨„è„Œé“†ç¢Œè„›è„¢åª’æˆ®è„»é™†è„´ç¢Œä¹ˆ*/
+    /*5. Ã¦Å½Â³Ã¨â€žÂ©Ã¨â€žÂªÃ¨â€žÂ©Ã©Âºâ€œÃ¥Â¨â€žÃ¨â€žÅ’Ã©â€œâ€ Ã§Â¢Å’Ã¨â€žâ€ºÃ¨â€žÂ¢Ã¥Âªâ€™Ã¦Ë†Â®Ã¨â€žÂ»Ã©â„¢â€ Ã¨â€žÂ´Ã§Â¢Å’Ã¤Â¹Ë†*/
     esp_msg_index = cut_msg_head(esp_msg_buf, esp_msg_index, esp_frame.dataLen  + 5);
     if(esp_msg_index > 0)
     {
@@ -3577,18 +3577,18 @@ uint8_t refreshApWeb()
   wifiConfigHtml += F("<input type=\"submit\" value=\"Save and reboot\" /></form></body></html>");
   #endif
   #if 0
-  wifiConfigHtml = F("<html><head><meta http-equiv=\"Content-Type\" content=\"text/html;\"><title>MKS WIFIè„œç›²è„°è„™</title><style>body{background: #b5ff6a;}.config{margin: 150px auto;width: 600px;height: 600px;overflow: hidden;</style></head>");
-  //wifiConfigHtml += F("<body><div class=\"config\"><br /><form method=\"POST\"><caption><h1>MKS WIFIè„œç›²è„°è„™</h1></caption> <div>èµ‚é™†é™†çœ‰WIFIè„•è„¨å�¤é“†:</div>/>");
+  wifiConfigHtml = F("<html><head><meta http-equiv=\"Content-Type\" content=\"text/html;\"><title>MKS WIFIÃ¨â€žÅ“Ã§â€ºÂ²Ã¨â€žÂ°Ã¨â€žâ„¢</title><style>body{background: #b5ff6a;}.config{margin: 150px auto;width: 600px;height: 600px;overflow: hidden;</style></head>");
+  //wifiConfigHtml += F("<body><div class=\"config\"><br /><form method=\"POST\"><caption><h1>MKS WIFIÃ¨â€žÅ“Ã§â€ºÂ²Ã¨â€žÂ°Ã¨â€žâ„¢</h1></caption> <div>Ã¨Âµâ€šÃ©â„¢â€ Ã©â„¢â€ Ã§Å“â€°WIFIÃ¨â€žâ€¢Ã¨â€žÂ¨Ã¥ï¿½Â¤Ã©â€œâ€ :</div>/>");
   wifiConfigHtml += F("<body><div class=\"config\"><br /><form method=\"POST\" action='config' ><caption><h1>MKS WIFI</h1></caption> ");
   /*
   for (uint8_t i = 0; i < num_ssids; i++) {
     wifiConfigHtml += "<input type=\"radio\" id=\"" + WiFi.SSID(i) + "\"name=\"ssid\" value=\"" + WiFi.SSID(i) + "\" /><label for=\"" + WiFi.SSID(i) + "\">" + WiFi.SSID(i) + "</label><br />";
   }*/
-  wifiConfigHtml += F("<br /><h2>èµ‚çœ‰è„¨è„—é¹¿è„¤å½•é•�</h2><form method='POST' action='update_sketch' enctype='multipart/form-data'><input type='file' name='update'><input type='submit' value='Update'></td></tr></table></form><br /><br/>");
-  wifiConfigHtml += F("<h2>è„¥é…¶è„—èŽ½è„œç›²è„°è„™</h2><input type=\"radio\" id=\"wifi_mode_sta\" name=\"wifi_mode\" value=\"wifi_mode_sta\" /><label for=\"wifi_mode_sta\">STA(è„¡çŒ«è„°è„™è„•å�¢é™†è„«ç¢Œé™†è„§è„—è„™å¿™wifi)</label><br /><input type=\"radio\" id=\"wifi_mode_ap\" name=\"wifi_mode\" value=\"wifi_mode_ap\" /><label for=\"wifi_mode_ap\">AP(è„¡çŒ«è„°è„™è„›æ‹¢é©´èŒ…è„¦é™‹è„§è„—è„™å¿™è„ è„ ç¢ŒèŒ«)</label><br />");
+  wifiConfigHtml += F("<br /><h2>Ã¨Âµâ€šÃ§Å“â€°Ã¨â€žÂ¨Ã¨â€žâ€”Ã©Â¹Â¿Ã¨â€žÂ¤Ã¥Â½â€¢Ã©â€¢ï¿½</h2><form method='POST' action='update_sketch' enctype='multipart/form-data'><input type='file' name='update'><input type='submit' value='Update'></td></tr></table></form><br /><br/>");
+  wifiConfigHtml += F("<h2>Ã¨â€žÂ¥Ã©â€¦Â¶Ã¨â€žâ€”Ã¨Å½Â½Ã¨â€žÅ“Ã§â€ºÂ²Ã¨â€žÂ°Ã¨â€žâ„¢</h2><input type=\"radio\" id=\"wifi_mode_sta\" name=\"wifi_mode\" value=\"wifi_mode_sta\" /><label for=\"wifi_mode_sta\">STA(Ã¨â€žÂ¡Ã§Å’Â«Ã¨â€žÂ°Ã¨â€žâ„¢Ã¨â€žâ€¢Ã¥ï¿½Â¢Ã©â„¢â€ Ã¨â€žÂ«Ã§Â¢Å’Ã©â„¢â€ Ã¨â€žÂ§Ã¨â€žâ€”Ã¨â€žâ„¢Ã¥Â¿â„¢wifi)</label><br /><input type=\"radio\" id=\"wifi_mode_ap\" name=\"wifi_mode\" value=\"wifi_mode_ap\" /><label for=\"wifi_mode_ap\">AP(Ã¨â€žÂ¡Ã§Å’Â«Ã¨â€žÂ°Ã¨â€žâ„¢Ã¨â€žâ€ºÃ¦â€¹Â¢Ã©Â©Â´Ã¨Å’â€¦Ã¨â€žÂ¦Ã©â„¢â€¹Ã¨â€žÂ§Ã¨â€žâ€”Ã¨â€žâ„¢Ã¥Â¿â„¢Ã¨â€žÂ Ã¨â€žÂ Ã§Â¢Å’Ã¨Å’Â«)</label><br />");
 
 
-  wifiConfigHtml += F("<br /><br /><table border='0'><tr><td><label for=\"password\">WIFIæ‹¢æ½ž</label><input type=\"text\" id=\"hidden_ssid\" name=\"hidden_ssid\" /></td></tr><tr><td><label for=\"password\">è„™è„ºè„—æ¯›æ‹¢æ½ž</label>");wifiConfigHtml += F("<input type=\" PASSWORD_INPUT_TYPE \" id=\"password\" name=\"password\" /></td></tr><tr><td colspan=2 align=\"right\"> <input type=\"submit\" value=\"è„¡çŒ«è„°è„™è™�åž„è„°è„´è„�ä¹ˆ\"></td></tr></table></form></div></div></body></html>");
+  wifiConfigHtml += F("<br /><br /><table border='0'><tr><td><label for=\"password\">WIFIÃ¦â€¹Â¢Ã¦Â½Å¾</label><input type=\"text\" id=\"hidden_ssid\" name=\"hidden_ssid\" /></td></tr><tr><td><label for=\"password\">Ã¨â€žâ„¢Ã¨â€žÂºÃ¨â€žâ€”Ã¦Â¯â€ºÃ¦â€¹Â¢Ã¦Â½Å¾</label>");wifiConfigHtml += F("<input type=\" PASSWORD_INPUT_TYPE \" id=\"password\" name=\"password\" /></td></tr><tr><td colspan=2 align=\"right\"> <input type=\"submit\" value=\"Ã¨â€žÂ¡Ã§Å’Â«Ã¨â€žÂ°Ã¨â€žâ„¢Ã¨â„¢ï¿½Ã¥Å¾â€žÃ¨â€žÂ°Ã¨â€žÂ´Ã¨â€žï¿½Ã¤Â¹Ë†\"></td></tr></table></form></div></div></body></html>");
 #endif
   wifiConfigHtml = F("<html><head><meta http-equiv='Content-Type' content='text/html;'><title>MKS WIFI</title><style>body{background: #b5ff6a;}.config{margin: 150px auto;width: 600px;height: 600px;overflow: hidden;</style></head>");
   wifiConfigHtml += F("<body><div class='config'></caption><br /><h4><a href='www.mischianti.org'>www.mischianti.org</a> </h4><h4>MKS WIFI MISCHIANTI");
@@ -3818,7 +3818,7 @@ static void extract_file_item_cloud(File dataFile, String fileStr)
 }
 #if 1
 
-//ç¯“å¨„????éš†é¢…???ç¯“å¨„???2éˆ§??éš†åº�ç¯“å¨„??ç¯“ç¯“éš†çŸ›????ç¯“å¨„ç¯“C?ç¯“ç¯“éš†é™‹éš†æ¯›?1a?éš†çŸ›???éš†é¢…???ç¯“å¨„???éš†é™‹-?éš†ç›²?ç¯“å¨„?ç¯“C?éš†åº�???-GET??éš†æŽ³????éˆ§îƒ�âˆ¶????
+//Ã§Â¯â€œÃ¥Â¨â€ž????Ã©Å¡â€ Ã©Â¢â€¦???Ã§Â¯â€œÃ¥Â¨â€ž???2Ã©Ë†Â§??Ã©Å¡â€ Ã¥Âºï¿½Ã§Â¯â€œÃ¥Â¨â€ž??Ã§Â¯â€œÃ§Â¯â€œÃ©Å¡â€ Ã§Å¸â€º????Ã§Â¯â€œÃ¥Â¨â€žÃ§Â¯â€œC?Ã§Â¯â€œÃ§Â¯â€œÃ©Å¡â€ Ã©â„¢â€¹Ã©Å¡â€ Ã¦Â¯â€º?1a?Ã©Å¡â€ Ã§Å¸â€º???Ã©Å¡â€ Ã©Â¢â€¦???Ã§Â¯â€œÃ¥Â¨â€ž???Ã©Å¡â€ Ã©â„¢â€¹-?Ã©Å¡â€ Ã§â€ºÂ²?Ã§Â¯â€œÃ¥Â¨â€ž?Ã§Â¯â€œC?Ã©Å¡â€ Ã¥Âºï¿½???-GET??Ã©Å¡â€ Ã¦Å½Â³????Ã©Ë†Â§Ã®Æ’ï¿½Ã¢Ë†Â¶????
 void fsHandler()
 {
   String path = server.uri();
@@ -3860,7 +3860,7 @@ void fsHandler()
   else if ( path.endsWith(".ico")) dataType = F("image/x-icon");
 
 
-  /*ç¯“å¨„????éš†çŸ›???htmlç¯“å¨„????|??? */
+  /*Ã§Â¯â€œÃ¥Â¨â€ž????Ã©Å¡â€ Ã§Å¸â€º???htmlÃ§Â¯â€œÃ¥Â¨â€ž????|??? */
   server.streamFile(dataFile, dataType);
 
 

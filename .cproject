@@ -28,6 +28,15 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/WebSockets/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/Hash/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266WiFi/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ESP8266mDNS/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ESP8266WiFi/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/WebSockets/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ArduinoJson/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/Hash/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ESP8266HTTPClient/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/EEPROM}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.cpp.sketch.input.1951863783" name="Sorgente CPP" superClass="io.sloeber.compiler.cpp.sketch.input"/>
 							</tool>
@@ -42,6 +51,15 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/WebSockets/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/Hash/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266WiFi/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ESP8266mDNS/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ESP8266WiFi/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/WebSockets/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ArduinoJson/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/Hash/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ESP8266HTTPClient/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/EEPROM}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.c.sketch.input.49230274" name="Sorgente C" superClass="io.sloeber.compiler.c.sketch.input"/>
 							</tool>
@@ -56,6 +74,15 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/WebSockets/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/Hash/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266WiFi/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ESP8266mDNS/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ESP8266WiFi/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/WebSockets/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ArduinoJson/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/Hash/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ESP8266HTTPClient/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/EEPROM}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.S.sketch.input.1498411798" name="Sorgente Assembly" superClass="io.sloeber.compiler.S.sketch.input"/>
 							</tool>

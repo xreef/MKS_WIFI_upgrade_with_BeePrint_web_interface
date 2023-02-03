@@ -10,7 +10,11 @@ Version 1.4
 Thanks to Aleksandr Shell for the russian language translation.
 Thanks to [reprapy](https://reprapy.pl/) for the polish language translation.
 
+Version 1.6
+Thanks to Ronaldo Risso for Portuguese language
+
 ##### Changelog
+ - 2023-02-04 BeePrint 1.6 MKS WiFi 1.2 Add Portuguese language (thanks Ronaldo Risso), remaining time and minor fix
  - 2022-02-03 BeePrint 1.5 MKS WiFi 1.2 Better RU translation, fix preload and check the file length
  - 2022-01-08 BeePrint 1.4 MKS WiFi 1.2 Static IP configuration, mDNS, polish translation and minor fix
  - 2022-01-02 BeePrint 1.3 Polish language
