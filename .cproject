@@ -19,15 +19,6 @@
 							<builder buildPath="${workspace_loc:/MKS_WIFI_source}/Release" id="io.sloeber.sketch.builder.272935153" keepEnvironmentInBuildfile="false" name="Generatore di sketch Arduino" parallelBuildOn="false" superClass="io.sloeber.sketch.builder"/>
 							<tool id="io.sloeber.tool.sketch.compiler.cpp.1257752036" name="Compilatore Arduino C++" superClass="io.sloeber.tool.sketch.compiler.cpp">
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="io.sloeber.compiler.cpp.sketch.option.incpath.1386314554" name="Cartelle incluse (-I)" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/core/variant}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/core/core}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266HTTPClient/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/EEPROM}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266mDNS/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ArduinoJson/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/WebSockets/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/Hash/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266WiFi/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/core/variant}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ESP8266mDNS/src}&quot;"/>
@@ -42,15 +33,6 @@
 							</tool>
 							<tool id="io.sloeber.tool.compiler.c.2125194466" name="Compilatore Arduino C" superClass="io.sloeber.tool.compiler.c">
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="io.sloeber.compiler.c.sketch.option.incpath.1103533910" name="Cartelle incluse (-I)" superClass="io.sloeber.compiler.c.sketch.option.incpath" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/core/variant}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/core/core}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266HTTPClient/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/EEPROM}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266mDNS/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ArduinoJson/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/WebSockets/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/Hash/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266WiFi/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/core/variant}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ESP8266mDNS/src}&quot;"/>
@@ -65,15 +47,6 @@
 							</tool>
 							<tool id="io.sloeber.tool.sketch.compiler.s.930830389" name="Compilatore codice macchina Arduino" superClass="io.sloeber.tool.sketch.compiler.s">
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="io.sloeber.compiler.asm.sketch.option.incpath.1484722863" name="Cartelle incluse (-I)" superClass="io.sloeber.compiler.asm.sketch.option.incpath" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/core/variant}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/core/core}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266HTTPClient/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/EEPROM}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266mDNS/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ArduinoJson/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/WebSockets/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/Hash/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_source/libraries/ESP8266WiFi/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/core/variant}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/core/core}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MKS_WIFI_upgrade_with_BeePrint_web_interface/libraries/ESP8266mDNS/src}&quot;"/>

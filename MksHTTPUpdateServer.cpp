@@ -107,7 +107,7 @@ void MksHTTPUpdateServer::setup(RepRapWebServer *server,  const char * username,
 				&& (!upload.filename.startsWith("MksWifi_WebView.bin")))
 			{
 				Update_result = UPDATE_FILE_ERROR;
-				upload.status == UPLOAD_FILE_ABORTED;
+				upload.status = UPLOAD_FILE_ABORTED;
 			
 				return;
 			}
@@ -144,7 +144,7 @@ void MksHTTPUpdateServer::setup(RepRapWebServer *server,  const char * username,
 				else
 				{
 					Update_result = UPDATE_FILE_ERROR;
-					upload.status == UPLOAD_FILE_ABORTED;
+					upload.status = UPLOAD_FILE_ABORTED;
 					return;
 				}
 			}
@@ -155,7 +155,7 @@ void MksHTTPUpdateServer::setup(RepRapWebServer *server,  const char * username,
 				else
 				{
 					Update_result = UPDATE_FILE_ERROR;
-					upload.status == UPLOAD_FILE_ABORTED;
+					upload.status = UPLOAD_FILE_ABORTED;
 					
 					
 					return;
@@ -164,7 +164,7 @@ void MksHTTPUpdateServer::setup(RepRapWebServer *server,  const char * username,
 			else
 			{
 				Update_result = UPDATE_COMM_ERROR;
-				upload.status == UPLOAD_FILE_ABORTED;
+				upload.status = UPLOAD_FILE_ABORTED;
 				return;
 			}
 

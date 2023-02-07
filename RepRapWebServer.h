@@ -187,10 +187,10 @@ protected:
   String           _responseHeaders;
 
   String           _hostHeader;
-  bool             _chunked;
+  bool             _chunked = false;
 
   uint32_t _postLength;
-  bool _servingPrinter;
+  bool _servingPrinter = false;
 };
 
 

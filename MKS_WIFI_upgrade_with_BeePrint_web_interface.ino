@@ -38,11 +38,11 @@
 #include <EMailSender.h>
 #endif
 
-#define ENABLE_CORS
+// #define ENABLE_CORS
 
 // #define EXTENDED_API
 
-#define MKSWIFI_DEBUG
+// #define MKSWIFI_DEBUG
 
 // Define where debug output will be printed.
 #define DEBUG_PRINTER Serial1
@@ -71,7 +71,7 @@ extern "C" {
 
 }
 
-char* firmwareVersion = "MISCHIANTI_v1.2";
+char* firmwareVersion = "MISCHIANTI_v1.3";
 
 
 
@@ -82,9 +82,9 @@ boolean GET_VERSION_OK = false;
 
 
 #ifdef SHOW_PASSWORDS
-# define PASSWORD_INPUT_TYPE  "\"text\""
+# define PASSWORD_INPUT_TYPE  F("\"text\"")
 #else
-# define PASSWORD_INPUT_TYPE  "\"password\""
+# define PASSWORD_INPUT_TYPE  F("\"password\"")
 #endif
 
 char wifi_mode[] = {"wifi_mode_sta"};
@@ -285,7 +285,7 @@ OperatingState currentState = OperatingState::Unknown;
 ADC_MODE(ADC_VCC);          // need this for the ESP.getVcc() call to work
 
 void fsHandler();
-void handleGcode();
+//void handleGcode();
 void handleRrUpload();
 void  handleUpload();
 
@@ -299,6 +299,8 @@ void onWifiConfig();
 void cloud_down_file(const char *url);
 void cloud_down_file();
 
+#ifdef EXTENDED_API
+
 void handleConfig();
 void handleApiPrinter();
 void handleApiPrinterCtrl();
@@ -310,6 +312,8 @@ void handleApiFileList();
 void handleApiPrint();
 void handleApiPrintInf();
 void handleApiLogs();
+
+#endif
 
 #define FILE_FIFO_SIZE  (4096)
 #define BUF_INC_POINTER(p)  ((p + 1 == FILE_FIFO_SIZE) ? 0:(p + 1))
@@ -1058,9 +1062,9 @@ void query_printer_inf()
       if(millis() - last_query_temp_time > 5000) //every 5 seconds
       {
         if(GET_VERSION_OK)
-          package_gcode("M27\nM992\nM994\nM991\nM997\n", false);
+          package_gcode(F("M27\nM992\nM994\nM991\nM997\n"), false);
         else
-          package_gcode("M27\nM992\nM994\nM991\nM997\nM115\n", false);
+          package_gcode(F("M27\nM992\nM994\nM991\nM997\nM115\n"), false);
 
         /*transfer_state = TRANSFER_READY;
         digitalWrite(EspReqTransferPin, LOW);*/
@@ -1075,10 +1079,10 @@ void query_printer_inf()
 
         if(GET_VERSION_OK)
           //package_gcode("M27\nM997\n");
-          package_gcode("M991\nM27\nM997\n", false);
+          package_gcode(F("M991\nM27\nM997\n"), false);
         else
           //package_gcode("M27\nM997\nM115\n");
-          package_gcode("M991\nM27\nM997\nM115\n", false);
+          package_gcode(F("M991\nM27\nM997\nM115\n"), false);
 
         /*transfer_state = TRANSFER_READY;
         digitalWrite(EspReqTransferPin, LOW);*/

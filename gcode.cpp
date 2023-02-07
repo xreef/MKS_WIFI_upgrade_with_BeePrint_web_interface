@@ -74,7 +74,7 @@ uint8_t  DecStr2Int(int8_t * buf,  int  *result)
 	int  index = 0;
 	
 	int  retVal = 0;
-	int8_t  dot_flag = 0;
+//	int8_t  dot_flag = 0;
 	int8_t  negat_flag = 0;
 		
 	if(buf == 0  ||  result == 0)
@@ -140,7 +140,7 @@ void paser_cmd(uint8_t *cmdRxBuf)
 	int8_t *tmpStr_e = 0;
 	
 	float  tmpTemp = 0;
-	int8_t rcv_ack_flag = 0;
+//	int8_t rcv_ack_flag = 0;
 	int32_t i, j, k;
 	int8_t inc_flag = 0;
 	int8_t num_valid = 0;
