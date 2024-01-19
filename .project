@@ -44,7 +44,7 @@
 		<link>
 			<name>libraries/ArduinoJson</name>
 			<type>2</type>
-			<location>D:/program/Sloeber/arduinoPlugin/libraries/ArduinoJson/6.20.0</location>
+			<location>D:/program/Sloeber/arduinoPlugin/libraries/ArduinoJson/6.21.3</location>
 		</link>
 		<link>
 			<name>libraries/EEPROM</name>

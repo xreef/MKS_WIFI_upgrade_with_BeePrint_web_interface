@@ -522,7 +522,7 @@ void postConfigFile() {
   uint8_t readBuf[postLength];
   DynamicJsonDocument doc(postLength);
 
-  DEBUG_PRINT(F("POST LENGHT: "));
+  DEBUG_PRINT(F("POST LENGTH: "));
   DEBUG_PRINTLN((long)postLength);
   DEBUG_PRINT(F("FREE: "));
   DEBUG_PRINTLN(ESP.getMaxFreeBlockSize());
@@ -916,13 +916,19 @@ void var_init()
 
 }
 
-
+#define MARILIN_NEW
 
 void setup() {
 
   var_init();
 
+#ifdef MARILIN_NEW
+  Serial.begin(250000);
+#else
   Serial.begin(115200);
+#endif
+
+
 //   Serial.begin(1958400);
 //   Serial.begin(4500000);
 //  Serial.begin(1958400);
@@ -2694,12 +2700,20 @@ void do_transfer()
       {
         if(rcv_end_flag && (readBytes < FILE_BLOCK_SIZE))
         {
+			#ifdef MARILIN_NEW
+			if(Serial.baudRate() != 250000)
+			{
+			  Serial.flush();
+			   Serial.begin(250000);
+			}
+			#else
+			  if(Serial.baudRate() != 115200)
+			  {
+				Serial.flush();
+				 Serial.begin(115200);
+			  }
+			#endif
 
-          if(Serial.baudRate() != 115200)
-          {
-            Serial.flush();
-             Serial.begin(115200);
-          }
           transfer_file_flag = false;
           rcv_end_flag = false;
           transfer_state = TRANSFER_IDLE;
@@ -4083,14 +4097,27 @@ void handleUpload()
 
       //Serial.print("postLength:");
       //Serial.println(postLength );
-      if(Serial.baudRate() != 115200)
-      {
-        Serial.flush();
-        Serial.begin(115200);
-        // Serial.begin(4500000);
-      }
+//      if(Serial.baudRate() != 115200)
+//      {
+//        Serial.flush();
+//        Serial.begin(115200);
+//        // Serial.begin(4500000);
+//      }
 
       //Serial.println("timeout" );
+		#ifdef MARILIN_NEW
+		if(Serial.baudRate() != 250000)
+		{
+		  Serial.flush();
+		   Serial.begin(250000);
+		}
+		#else
+		  if(Serial.baudRate() != 115200)
+		  {
+			Serial.flush();
+			 Serial.begin(115200);
+		  }
+		#endif
 
 
       transfer_file_flag = false;

@@ -1,7 +1,7 @@
 Config.Release.board.BOARD.ID=nodemcuv2
 Config.Release.board.BOARD.MENU.baud=921600
 Config.Release.board.BOARD.MENU.dbg=Disabled
-Config.Release.board.BOARD.MENU.eesz=4M2M
+Config.Release.board.BOARD.MENU.eesz=4M3M
 Config.Release.board.BOARD.MENU.exception=legacy
 Config.Release.board.BOARD.MENU.ip=lm2n
 Config.Release.board.BOARD.MENU.led=2
